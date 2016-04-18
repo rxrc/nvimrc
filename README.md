@@ -27,13 +27,13 @@ see `:help nvimrc` or view [nvimrc.txt](./doc/nvimrc.txt) directly.
 You can install this via the command-line with either curl
 
 ```
-$ curl -L https://git.io/vwYYX | sh
+$ curl -L https://git.io/vwYRO | sh
 ```
 
 or wget
 
 ```
-$ wget https://git.io/vwYYX -O - | sh
+$ wget https://git.io/vwYRO -O - | sh
 ```
 
 You will need to exit Neovim manually with `:qa` after each step.
