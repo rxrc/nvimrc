@@ -1,5 +1,5 @@
 *nvimrc.txt* Neovim configuration as a self-bootstrapping plugin.
-*nvimrc*     0.0.0
+*nvimrc*     0.0.1
 
                                   _                    ~
                        _ ____   _(_)_ __ ___  _ __ ___ ~
@@ -27,7 +27,7 @@ Overall configuration then follows a normal plugin structure.
 This document concerns the details of this specific Neovim environment.
 For installation instructions and development information, see
 
-    https://github.com/makenew/nvimrc
+    https://github.com/rxrc/nvimrc
 
 ------------------------------------------------------------------------------
 1.1 Structure                                                *nvimrc-structure*
@@ -43,7 +43,7 @@ This plugin is authored by Evan Sosenko.
 
 Find the source and latest version at
 
-    https://github.com/makenew/nvimrc
+    https://github.com/rxrc/nvimrc
 
 ==============================================================================
 ii. License                                                    *nvimrc-license*

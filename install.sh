@@ -4,7 +4,7 @@ main () {
   set -e
   set -u
 
-  repo='makenew/nvimrc'
+  repo='rxrc/nvimrc'
 
   config_home=$XDG_CONFIG_HOME
   nvim_root="${config_home}/nvim"

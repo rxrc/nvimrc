@@ -1,8 +1,9 @@
 # Neovim Configuration
 
-[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
-[![Github releases](https://img.shields.io/github/release/makenew/nvimrc.svg)](https://github.com/makenew/nvimrc/releases)
-[![GitHub license](https://img.shields.io/github/license/makenew/nvimrc.svg)](./LICENSE.txt)
+[![Github releases](https://img.shields.io/github/release/rxrc/nvimrc.svg)](https://github.com/rxrc/nvimrc/releases)
+[![GitHub license](https://img.shields.io/github/license/rxrc/nvimrc.svg)](./LICENSE.txt)
+
+> Built from [makenew/nvimrc](https://github.com/makenew/nvimrc).
 
 [Neovim] configuration as a Neovim plugin.
 
@@ -18,92 +19,6 @@ For documentation of this Neovim configuration,
 see `:help nvimrc` or view [nvimrc.txt](./doc/nvimrc.txt) directly.
 
 [vim-plug]: https://github.com/junegunn/vim-plug
-
-### Bootstrapping a New Config
-
-1. Clone the master branch of this repository with
-
-   ```
-   $ git clone --single-branch https://github.com/makenew/nvimrc.git
-   $ cd nvimrc
-   ```
-
-   Optionally, reset to the latest [release][Releases] with
-
-   ```
-   $ git reset --hard nvimrc-v1.0.0
-   ```
-
-2. Run
-
-   ```
-   $ ./makenew.sh
-   ```
-
-   and follow the prompts.
-   This will replace the boilerplate, delete itself,
-   and stage changes for commit.
-   This script assumes the project repository will be hosted on GitHub.
-   For an alternative location, you must update the URLs manually.
-
-3. If [choosing a license][Choose a license] other than the one provided:
-   update `LICENSE.txt` and the README License section with your chosen license.
-
-4. After committing the initial changes, host your `install.sh` on
-   GitHub pages with
-
-   ```
-   $ git checkout --orphan gh-pages
-   $ git reset
-   $ git add install.sh
-   $ git commit -m 'Add install.sh'
-   $ git push --set-upstream origin gh-page
-   $ git clean -fdx
-   $ git checkout master
-   ```
-
-   Then, update the install URLs in this README
-   (optionally, use [Git.io] to shorten them).
-
-5. Document your configuration in `doc/nvimrc.txt`.
-
-[Choose a license]: http://choosealicense.com/
-[Git.io]: https://git.io/
-[Releases]: https://github.com/makenew/nvimrc/releases
-[The Unlicense]: http://unlicense.org/UNLICENSE
-
-### Updating
-
-If you want to pull in future updates from this skeleton,
-you can fetch and merge in changes from this repository.
-
-If this repository is already set as `origin`,
-rename it to `upstream` with
-
-```
-$ git remote rename origin upstream
-```
-
-and then configure your `origin` branch as normal.
-
-Otherwise, add this as a new remote with
-
-```
-$ git remote add upstream https://github.com/makenew/nvimrc.git
-```
-
-You can then fetch and merge changes with
-
-```
-$ git fetch upstream
-$ git merge upstream/master
-```
-
-#### Changelog
-
-Note that `CHANGELOG.md` is just a template for this skeleton.
-The actual changes for this project are documented in the commit history
-and summarized under [Releases].
 
 ## Installation
 
@@ -130,17 +45,17 @@ You will need to exit Neovim manually with `:qa` after each step.
 2. Create `~/.config/nvim/init.vim` with
 
   ```vim
-  " makenew/nvimrc
+  " rxrc/nvimrc
 
   call plug#begin($XDG_CONFIG_HOME . '/nvim/plugged')
 
   if filereadable($XDG_CONFIG_HOME . '/nvim/plugged/nvimrc/plugins.vim')
     source $XDG_CONFIG_HOME/nvim/plugged/nvimrc/plugins.vim
     if $NVIMRC_INSTALL != 'true'
-      Plug 'makenew/nvimrc'
+      Plug 'rxrc/nvimrc'
     endif
   else
-    Plug 'makenew/nvimrc', { 'on': [] }
+    Plug 'rxrc/nvimrc', { 'on': [] }
   endif
 
   call plug#end()
@@ -186,10 +101,10 @@ The [nvimrc source] is hosted on GitHub.
 Clone the project with
 
 ```
-$ git clone https://github.com/makenew/nvimrc.git
+$ git clone https://github.com/rxrc/nvimrc.git
 ```
 
-[nvimrc source]: https://github.com/makenew/nvimrc
+[nvimrc source]: https://github.com/rxrc/nvimrc
 
 ### Local Development Mode
 
@@ -216,15 +131,11 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/makenew/nvimrc/fork).
+1. Fork it (https://github.com/rxrc/nvimrc/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes.
 4. Commit your changes (`git commit -am 'Add some feature'`).
 5. Push to the branch (`git push origin my-new-feature`).
-6. Create a new Pull Request.
-
-## License
-
 This software can be used freely, see [The Unlicense].
 The copyright text appearing below and elsewhere in this repository
 is for demonstration purposes only and does not apply to this software.

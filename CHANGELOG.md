@@ -7,4 +7,4 @@ This change log follows the conventions of
 
 ## [Unreleased][Unreleased]
 
-[Unreleased]: https://github.com/makenew/nvimrc/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/rxrc/nvimrc/compare/v0.0.1...HEAD
