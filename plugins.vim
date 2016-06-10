@@ -25,6 +25,13 @@ Plug 'tomasr/molokai'
 Plug 'jnurmine/zenburn'
 
 "
+" Editor
+"
+
+" Syntax
+Plug 'chrisbra/colorizer'
+
+"
 " Initialization Settings
 "
 
@@ -50,3 +57,15 @@ else
   let g:airline#extensions#promptline#snapshot_file = $HOME . '/.promptline.sh'
   let g:airline#extensions#tmuxline#snapshot_file = $HOME . '/.tmuxline.conf'
 endif
+
+"
+" colorizer
+
+" Enable colors for specific file types.
+let g:colorizer_auto_filetype = join([
+  \ 'css',
+  \ 'html',
+  \ 'html.handlebars',
+  \ 'sass',
+  \ 'scss'
+  \ ], ',')
