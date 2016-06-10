@@ -14,6 +14,8 @@ CONTENTS                                                      *nvimrc-contents*
     1.Intro....................................|nvimrc-intro|
         1.1.Structure..........................|nvimrc-structure|
     2.Settings.................................|nvimrc-settings|
+    3.Mappings.................................|nvimrc-mappings|
+        3.1.Custom Neovim mappings.............|nvimrc-mappings-custom|
     i.About....................................|nvimrc-about|
     ii.License.................................|nvimrc-license|
     iii.Warranty...............................|nvimrc-warranty|
@@ -68,6 +70,240 @@ Environment
     - Loads local spellfile `.spellfile.utf-8.add`.
     - Uses `$VIM_BACKGROUND` to set `background`.
     - Uses `$VIM_COLOR` to dynamically set airline theme.
+
+==============================================================================
+3. Mappings                                                   *nvimrc-mappings*
+
+With minor exceptions, all mappings are defined in individual `.vim` files
+under `plugin/mappings`.
+
+Conventionally, plugin specific mappings go in a file named after
+the corresponding plugin, e.g., `fzf.vim`.
+
+Alternatively, mappings spanning several interrelated plugs may be
+grouped under a single file, e.g., `autocompletion.vim` may
+contain mappings for deoplete, neosnippet, etc.
+(in which case the plugin names will appear in a comment if unspecified).
+
+The special file `neovim.vim` is reserved for native Neovim mappings.
+
+The remainder of this section documents mappings created or modified
+by this plugin. For behavior, refer to either Neovim's or
+the corresponding plugin's documentation.
+
+A general overview is given below, while a complete reference
+of all mappings is given in the following subsections.
+
+Note: my keyboard maps `CapsLock` to `RCtrl` and `RCtrl` to `Esc`.
+
+A mapping that depends on a plugin will contain the [Plugin Name]
+in square brackets.
+
+Critically different mappings
+    - <Leader> is set to <Space> and <LocalLeader> is \.
+    - Enter (or <Esc>) leaves insert mode.
+    - Use <C-CR> or <S-CR> to insert a newline (split the line)
+      in normal or insert mode.
+      Use \<Space> to split lines in normal mode for terminals
+      which do not register <C-CR> or <S-CR>.
+    - Enter opens command-line mode from normal or visual mode.
+    - <S-Esc> toggles the command-line window in normal or visual mode.
+    - U is mapped to redo and <C-R> is mapped to the original U key.
+    - q and Q provide single key mappings for ge and gE.
+    - <Leader>q is mapped to q (since q is now mapped to ge).
+    - ` and ' are swapped.
+    - & is remapped to reuse flags (synonym for `:&&`).
+
+Shortcuts for common functions
+    - <C-H>, <C-J>, <C-K>, and <C-L> move between splits,
+      move the cursor, scroll through history, and navigate popups.
+      They serve as general alternatives to the arrow keys when possible.
+    - Double tap <Leader> to toggle folds.
+    - <Leader>x is an easier to input shortcut for gx.
+    - <Leader>o clears the highlighting until next search.
+    - <Leader>= inserts from the expression register.
+    - <Leader>p and <Leader>P paste from the system clipboard.
+    - <Leader>c{motion} yanks to the system clipboard,
+      <Leader>C yanks to end of line to the system clipboard,
+      and <Leader>cc yanks the current line to the system clipboard.
+    - <Leader>m{motion} deletes and yanks to the system clipboard,
+      <Leader>M deletes and yanks to end of line to the system clipboard,
+      and <Leader>mm deletes and yanks the current line to the system clipboard.
+    - <Leader>:, <Leader>/, and <Leader>? open the corresponding
+      command-line or search window.
+
+Shortcuts for windows, tabs, and splits
+    - <Leader>{hjkl} splits the window.
+    - <Leader>{HJKL} splits the frame.
+    - <Leader><Tab> opens a new tab and <Leader><S-Tab> closes the tab.
+    - <Leader>, and <Leader>. cycle through tabs.
+
+Shortcuts for buffer manipulation
+    - <Leader><CR> is a synonym for `:quit` and <Leader>Q for `:quit!`.
+    - <C-Q> is a synonym for `:quitall`.
+    - <Leader>n is a synonym for `:enew`.
+    - <Leader>E is a synonym for `:edit!`.
+    - <Leader>s and <Leader>S are synonyms for `:update` and `:write!`.
+
+Toggles
+    - com toggles the colorcolumn display.
+    - cop toggles the <Leader>p, <Leader>P, and <Leader>c
+      mappings between using the `+` (default) and `*` registers.
+
+------------------------------------------------------------------------------
+3.1 Custom Neovim mappings                             *nvimrc-mappings-custom*
+
+This section lists any standard Neovim mappings which this plugin remaps,
+and any new mappings to existing Neovim functions.
+All mappings are nonrecursive unless otherwise noted.
+
+                                                        *com*
+com                     Toggle system clipboard mappings between using
+                        the + and * registers. See |<Leader>p|, |<Leader>P|,
+                        and |<Leader>c|.
+
+                                                        *cop*
+cop                     Toggle display of colorcolumn.
+
+                                                        *q*
+q                       Mapped to the motion ge (recursive).
+
+                                                        *Q*
+Q                       Mapped to the motion gE (recursive).
+
+                                                        *U*
+U                       Mapped to <C-R> (redo).
+
+                                                        *&*
+&                       Synonym for `:&&`.
+
+                                                        *'*
+'                       Mapped to ` (` is swapped with ').
+
+                                                        *`*
+`                       Mapped to ' (` is swapped with ').
+
+                                                        *<CR>*
+<CR>                    Exit insert mode via <Esc>. In normal
+                        or visual mode, open command-line mode.
+                        Otherwise this still behaves like <CR>.
+                        While the command-line and search windows are open,
+                        this still executes the selected command or search:
+                        Use <Leader>: to open command-line mode
+                        from these windows.
+
+                                                        *<S-CR>*
+<S-CR>                  Insert a newline in normal or insert mode.
+
+                                                        *<S-Esc>*
+<S-Esc>                 In normal or visual mode, toggle opening
+                        and closing the command-line window.
+
+                                                        *<C-H>*
+<C-H>                   In insert mode and command-line mode,
+                        move cursor one character right.
+
+                                                        *<C-J>*
+<C-J>                   In command-line mode, navigate history down.
+
+                                                        *<C-K>*
+<C-K>                   In command-line mode, navigate history up.
+
+                                                        *<C-L>*
+<C-L>                   In insert mode and command-line mode,
+                        move cursor one character right.
+
+                                                        *<C-Q>*
+<C-Q>                   Synonym for `:quitall`.
+
+                                                        *<C-R>*
+<C-R>                   Mapped to U.
+
+                                                        *<Leader>c*
+                                                        *<Leader>C*
+                                                        *<Leader>cc*
+<Leader>cc       or     Same as y, but use the system register +.
+<Leader>C        or     <Leader>cc yanks the current line.
+<Leader>c{motion}       <Leader>C yanks to the end of line.
+                        Can toggle between + and * registers using |cop|.
+
+                                                        *<Leader>q*
+                                                        *<Leader>E*
+<Leader>E               Synonym for `:edit!`.
+
+                                                        *<Leader>h* *<Leader>j*
+                                                        *<Leader>k* *<Leader>l*
+<Leader>{hjkl}          Split the window in corresponding direction.
+
+                                                        *<Leader>H* *<Leader>J*
+                                                        *<Leader>K* *<Leader>L*
+<Leader>{HJKL}          Split the frame in corresponding direction.
+
+                                                        *<Leader>m*
+                                                        *<Leader>M*
+                                                        *<Leader>mm*
+<Leader>mm       or     Same as m, but move to the system register +.
+<Leader>M        or     <Leader>mm moves the current line.
+<Leader>m{motion}       <Leader>M moves to the end of line.
+                        Can toggle between + and * registers using |cop|.
+
+                                                        *<Leader>n*
+<Leader>n               Synonym for `:enew`.
+
+                                                        *<Leader>o*
+<Leader>o               Synonym for `:nohlsearch`.
+
+                                                        *<Leader>p* *<Leader>P*
+<Leader>{pP}            Same as p and P, but use the system register +.
+                        Can toggle between + and * registers using |cop|.
+
+                                                        *<Leader>q*
+<Leader>q               Mapped to q.
+
+                                                        *<Leader>Q*
+<Leader>Q               Synonym for `:quit!`.
+
+                                                        *<Leader>s*
+<Leader>s               Synonym for `:update`.
+
+                                                        *<Leader>S*
+<Leader>S               Synonym for `:write!`.
+
+                                                        *<Leader>x*
+<Leader>x               Mapped to gx.
+
+                                                        *<Leader>'*
+<Leader>'               Mapped to M.
+
+                                                        *<Leader>,*
+<Leader>,               Mapped to gT.
+
+                                                        *<Leader>.*
+<Leader>.               Mapped to gt.
+
+                                                        *<Leader>/*
+<Leader>/               Mapped to q/.
+
+                                                        *<Leader>:*
+<Leader>:               Mapped to q:.
+
+                                                        *<Leader>=*
+<Leader>=               Synonym for `:put` `=`
+
+                                                        *<Leader>?*
+<Leader>?               Mapped to q?.
+
+                                                        *<Leader><CR>*
+<Leader><CR>            Synonym for `:quit`.
+
+                                                        *<Leader><Leader>*
+<Leader><Leader>        Mapped to za.
+
+                                                        *<Leader><Tab>*
+<Leader><Tab>           Open a new tab.
+
+                                                        *<Leader><S-Tab>*
+<Leader><S-Tab>         Close the current tab.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
