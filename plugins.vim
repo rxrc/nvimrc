@@ -35,6 +35,9 @@ Plug 'chrisbra/colorizer'
 Plug 'kana/vim-textobj-user'
      \ | Plug 'kana/vim-textobj-entire'
 
+" Whitespace
+Plug 'ntpeters/vim-better-whitespace'
+
 "
 " Initialization Settings
 "

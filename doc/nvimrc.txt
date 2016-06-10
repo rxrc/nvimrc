@@ -71,6 +71,9 @@ Environment
     - Uses `$VIM_BACKGROUND` to set `background`.
     - Uses `$VIM_COLOR` to dynamically set airline theme.
 
+Editor
+    - Strips trailing whitespace on save.
+
 ==============================================================================
 3. Mappings                                                   *nvimrc-mappings*
 
