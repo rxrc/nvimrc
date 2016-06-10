@@ -63,6 +63,9 @@ This section provides an overview of Neovim and plugin configuration choices.
 A general feature and usage overview is given below.
 Plugins with more involved configurations are given their own subsection.
 
+Environment
+    - Persistent undo history enabled.
+
 ==============================================================================
 i. About                                                         *nvimrc-about*
 
