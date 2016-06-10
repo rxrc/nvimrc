@@ -12,6 +12,12 @@ Plug 'tpope/vim-sensible'
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
 
+" Prompt and Statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/promptline.vim'
+Plug 'edkolev/tmuxline.vim'
+
 " Themes and Colors
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
