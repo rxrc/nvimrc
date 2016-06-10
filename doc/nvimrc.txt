@@ -13,6 +13,7 @@ CONTENTS                                                      *nvimrc-contents*
 
     1.Intro....................................|nvimrc-intro|
         1.1.Structure..........................|nvimrc-structure|
+    2.Settings.................................|nvimrc-settings|
     i.About....................................|nvimrc-about|
     ii.License.................................|nvimrc-license|
     iii.Warranty...............................|nvimrc-warranty|
@@ -53,6 +54,14 @@ autocompletion configuration.
 Use of `autocmd` within `augroup` is preferred where possible over `ftplugin`
 in order to group related configuration by plugin instead of file type.
 Use of `ftplugin` is preferred only for native Neovim settings.
+
+==============================================================================
+2. Settings                                                   *nvimrc-settings*
+
+This section provides an overview of Neovim and plugin configuration choices.
+
+A general feature and usage overview is given below.
+Plugins with more involved configurations are given their own subsection.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
