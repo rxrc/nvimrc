@@ -8,3 +8,6 @@ let maplocalleader = "\\"
 
 " Sensible Defaults
 Plug 'tpope/vim-sensible'
+
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim'
