@@ -31,6 +31,10 @@ Plug 'jnurmine/zenburn'
 " Syntax
 Plug 'chrisbra/colorizer'
 
+" Text Objects
+Plug 'kana/vim-textobj-user'
+     \ | Plug 'kana/vim-textobj-entire'
+
 "
 " Initialization Settings
 "
