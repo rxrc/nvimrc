@@ -31,6 +31,14 @@ For proper vim-airline GUI support, you must set
 
 [neovim-qt]: https://github.com/equalsraf/neovim-qt
 
+### Fonts
+
+The GUI font is [Inconsolata-g],
+and vim-airline is set to use [Powerline fonts].
+
+[Inconsolata-g]: https://github.com/powerline/fonts/tree/master/Inconsolata-g
+[Powerline fonts]: https://github.com/powerline/fonts
+
 ## Installation
 
 ### Automatic Install
