@@ -37,6 +37,23 @@ All plugins are loaded in `plugins.vim` using vim-plug.
 Some plugin settings must be set at plugin initialization.
 Those settings are located at the bottom of `plugins.vim`.
 
+All other settings are split into individual files organized
+either by function or plugin.
+
+Standard Neovim configuration is contained directly under `plugin`.
+Plugin specific configuration is contained in a correspondingly
+named `.vim` file in some (possible nested) directly under `plugin`.
+Settings are grouped by plugin, or possibly by the function
+of several interrelated plugins.
+
+The `plugin/mappings` directory is reserved for mappings.
+The `plugin/autocompletion` directory contains file type specific
+autocompletion configuration.
+
+Use of `autocmd` within `augroup` is preferred where possible over `ftplugin`
+in order to group related configuration by plugin instead of file type.
+Use of `ftplugin` is preferred only for native Neovim settings.
+
 ==============================================================================
 i. About                                                         *nvimrc-about*
 
