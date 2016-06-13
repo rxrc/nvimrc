@@ -39,6 +39,14 @@ Plug 'kana/vim-textobj-user'
 Plug 'ntpeters/vim-better-whitespace'
 
 "
+" Internal Interfaces
+"
+
+" Session
+Plug 'xolox/vim-misc'
+     \ | Plug 'xolox/vim-session'
+
+"
 " External Interfaces
 "
 
