@@ -39,6 +39,13 @@ Plug 'kana/vim-textobj-user'
 Plug 'ntpeters/vim-better-whitespace'
 
 "
+" External Interfaces
+"
+
+" Neomake
+Plug 'neomake/neomake'
+
+"
 " Initialization Settings
 "
 
