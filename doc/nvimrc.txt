@@ -136,6 +136,8 @@ Critically different mappings
     - : is the [EasyClip] substitution operator.
     - [EasyClip] takes over m and M (<Leader>' is mapped to M).
     - [Sneak] takes over s and S.
+    - Marks are handled by [Signature] with <Leader>;.
+      Use <Leader>;; to toggle marks.
     - Autocompletion with [deoplete] and [neosnippet]:
       see |nvimrc-settings-autocompletion|.
 
@@ -365,6 +367,12 @@ m{motion}                          M moves to the end of line.
 <Leader>{wW}            [Bbye] Close the buffer but not the window:
                                w is a synonym for `:Bdelete` and
                                W is a synonym for `:Bdelete!`.
+
+                                                        *<Leader>;*
+                                                        *<Leader>;;*
+<Leader>;{signature-mapping} or
+<Leader>;;              [Signature] <Leader>; is the signature leader.
+                                    <Leader>;; will toggle marks (<Leader>;.).
 
 ==============================================================================
 i. About                                                         *nvimrc-about*

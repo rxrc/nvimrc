@@ -42,6 +42,9 @@ Plug 'kana/vim-textobj-user'
 " Sneak
 Plug 'justinmk/vim-sneak'
 
+" Marks
+Plug 'kshenoy/vim-signature'
+
 " Macros
 Plug 'bronson/vim-visual-star-search'
 Plug 'tpope/vim-commentary'
@@ -131,6 +134,12 @@ let g:colorizer_auto_filetype = join([
 
 " Enable rainbow parentheses.
 let g:rainbow_active = 1
+
+"
+" vim-signature
+
+" Set signature leader.
+let g:SignatureMap = { 'Leader': "\<Leader\>;" }
 
 "
 " vim-commentary
