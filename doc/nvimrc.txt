@@ -17,6 +17,7 @@ CONTENTS                                                      *nvimrc-contents*
         2.1.Autocompletion settings............|nvimrc-settings-autocompletion|
     3.Mappings.................................|nvimrc-mappings|
         3.1.Custom Neovim mappings.............|nvimrc-mappings-custom|
+        3.2.Plugin specific mappings...........|nvimrc-mappings-plugin|
     i.About....................................|nvimrc-about|
     ii.License.................................|nvimrc-license|
     iii.Warranty...............................|nvimrc-warranty|
@@ -325,6 +326,15 @@ U                       Mapped to <C-R> (redo).
 
                                                         *<Leader><S-Tab>*
 <Leader><S-Tab>         Close the current tab.
+
+------------------------------------------------------------------------------
+3.2 Plugin specific mappings                           *nvimrc-mappings-plugin*
+
+This section lists mappings to plugin specific functions,
+and modifications to a plugin's normal provided mappings.
+
+Each mapping's dependent plugin is prefixed
+by the [Plugin Name] in square brackets.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
