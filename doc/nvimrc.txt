@@ -183,6 +183,7 @@ Toggles
     - com toggles the colorcolumn display.
     - cop toggles the <Leader>p, <Leader>P, and <Leader>c
       mappings between using the `+` (default) and `*` registers.
+    - coz toggles [Unicode] name or glyph completion.
 
 ------------------------------------------------------------------------------
 3.1 Custom Neovim mappings                             *nvimrc-mappings-custom*
@@ -353,6 +354,9 @@ coa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
 
                                                         *cof*
 cof                     [EasyClip] Toggle paste formatting.
+
+                                                        *coz*
+coz                     [Unicode] Toggle unicode name or glyph completion.
 
                                                         *m* *M* *mm*
 mm               or     [EasyClip] Move motion.

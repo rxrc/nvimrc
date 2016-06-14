@@ -71,6 +71,9 @@ Plug 'mbbill/undotree'
 Plug 'xolox/vim-misc'
      \ | Plug 'xolox/vim-session'
 
+" Unicode
+Plug 'chrisbra/unicode.vim'
+
 " Autocompletion
 function! DoRemote(arg)
   UpdateRemotePlugins
