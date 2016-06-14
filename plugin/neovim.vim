@@ -33,3 +33,6 @@ set noerrorbells visualbell t_vb=
 
 " Hide some autocompletion messages.
 set shortmess+=c
+
+" Enable omni completion.
+set omnifunc=syntaxcomplete#Complete

@@ -46,6 +46,18 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'xolox/vim-misc'
      \ | Plug 'xolox/vim-session'
 
+" Autocompletion
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'shougo/deoplete.nvim',
+     \ { 'do': function('DoRemote') }
+Plug 'shougo/neosnippet'
+Plug 'rxrc/neosnippet-snippets',
+     \ { 'branch': 'rxrc' }
+Plug 'rxrc/vim-snippets',
+     \ { 'branch': 'rxrc' }
+
 "
 " External Interfaces
 "
@@ -90,4 +102,19 @@ let g:colorizer_auto_filetype = join([
   \ 'html.handlebars',
   \ 'sass',
   \ 'scss'
+  \ ], ',')
+
+"
+" deoplete
+
+" Enable deoplete.
+let g:deoplete#enable_at_startup = 1
+
+"
+" neosnippet
+
+" Set snippet paths.
+let neosnippet#snippets_directory = join([
+  \ '../neocomplcache-snippets/neosnippets',
+  \ '../vim-snippets/snippets'
   \ ], ',')
