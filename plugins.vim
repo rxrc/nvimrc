@@ -38,6 +38,9 @@ Plug 'kana/vim-textobj-user'
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
+" Buffer
+Plug 'moll/vim-bbye'
+
 "
 " Internal Interfaces
 "

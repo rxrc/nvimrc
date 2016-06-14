@@ -166,6 +166,7 @@ Shortcuts for buffer manipulation
     - <Leader>n is a synonym for `:enew`.
     - <Leader>E is a synonym for `:edit!`.
     - <Leader>s and <Leader>S are synonyms for `:update` and `:write!`.
+    - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Toggles
     - com toggles the colorcolumn display.
@@ -335,6 +336,11 @@ and modifications to a plugin's normal provided mappings.
 
 Each mapping's dependent plugin is prefixed
 by the [Plugin Name] in square brackets.
+
+                                                        *<Leader>w* *<Leader>W*
+<Leader>{wW}            [Bbye] Close the buffer but not the window:
+                               w is a synonym for `:Bdelete` and
+                               W is a synonym for `:Bdelete!`.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
