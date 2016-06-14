@@ -172,6 +172,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Toggles
+    - coa toggles [Rainbow Parentheses].
     - cof toggles [EasyClip] paste formatting.
     - com toggles the colorcolumn display.
     - cop toggles the <Leader>p, <Leader>P, and <Leader>c
@@ -340,6 +341,9 @@ and modifications to a plugin's normal provided mappings.
 
 Each mapping's dependent plugin is prefixed
 by the [Plugin Name] in square brackets.
+
+                                                        *coa*
+coa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
 
                                                         *cof*
 cof                     [EasyClip] Toggle paste formatting.

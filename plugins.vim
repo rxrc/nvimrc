@@ -33,6 +33,7 @@ Plug 'jnurmine/zenburn'
 
 " Syntax
 Plug 'chrisbra/colorizer'
+Plug 'luochen1990/rainbow'
 
 " Text Objects
 Plug 'kana/vim-textobj-user'
@@ -118,6 +119,12 @@ let g:colorizer_auto_filetype = join([
   \ 'sass',
   \ 'scss'
   \ ], ',')
+
+"
+" rainbow
+
+" Enable rainbow parentheses.
+let g:rainbow_active = 1
 
 "
 " deoplete
