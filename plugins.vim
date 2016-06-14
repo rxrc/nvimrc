@@ -44,6 +44,9 @@ Plug 'justinmk/vim-sneak'
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
+" Clipboard
+Plug 'svermeulen/vim-easyclip'
+
 " Buffer
 Plug 'moll/vim-bbye'
 

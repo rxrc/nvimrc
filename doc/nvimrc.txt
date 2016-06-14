@@ -133,6 +133,8 @@ Critically different mappings
     - <Leader>q is mapped to q (since q is now mapped to ge).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
+    - : is the [EasyClip] substitution operator.
+    - [EasyClip] takes over m and M (<Leader>' is mapped to M).
     - [Sneak] takes over s and S.
     - Autocompletion with [deoplete] and [neosnippet]:
       see |nvimrc-settings-autocompletion|.
@@ -170,6 +172,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Toggles
+    - cof toggles [EasyClip] paste formatting.
     - com toggles the colorcolumn display.
     - cop toggles the <Leader>p, <Leader>P, and <Leader>c
       mappings between using the `+` (default) and `*` registers.
@@ -337,6 +340,18 @@ and modifications to a plugin's normal provided mappings.
 
 Each mapping's dependent plugin is prefixed
 by the [Plugin Name] in square brackets.
+
+                                                        *cof*
+cof                     [EasyClip] Toggle paste formatting.
+
+                                                        *m* *M* *mm*
+mm               or     [EasyClip] Move motion.
+M                or                mm moves the current line.
+m{motion}                          M moves to the end of line.
+
+                                                        *:* *::*
+:                or     [EasyClip] Substitution operator.
+::                                 :: substitutes the entire line.
 
                                                         *<Leader>w* *<Leader>W*
 <Leader>{wW}            [Bbye] Close the buffer but not the window:
