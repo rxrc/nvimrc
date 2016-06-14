@@ -71,6 +71,7 @@ Environment
     - Loads local spellfile `.spellfile.utf-8.add`.
     - Uses `$VIM_BACKGROUND` to set `background`.
     - Uses `$VIM_COLOR` to dynamically set airline theme.
+    - Uses `$VIM_LANG` to set spelling language. Defaults to `en_us`.
 
 Editor
     - Strips trailing whitespace on save.

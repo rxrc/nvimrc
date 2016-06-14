@@ -1,5 +1,12 @@
+" Use spelling language defined in VIM_LANG.
+let b:spelllang = 'en_us'
+if !empty($VIM_LANG)
+  let b:spelllang = $VIM_LANG
+endif
+
 " Enable spell checking.
-set spell spelllang=en_us
+set spell
+let &spelllang = b:spelllang
 
 " Use local spellfile if available.
 function! s:spell_auto_local_spellfile() abort
@@ -7,7 +14,8 @@ function! s:spell_auto_local_spellfile() abort
   if filereadable(b:spellfile)
     let &l:spellfile = b:spellfile
     setlocal spell
-    setlocal spelllang=en_us
+    set spell
+    let &spelllang = b:spelllang
   else
     setlocal spellfile=
   endif
