@@ -133,6 +133,7 @@ Critically different mappings
     - <Leader>q is mapped to q (since q is now mapped to ge).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
+    - [Sneak] takes over s and S.
     - Autocompletion with [deoplete] and [neosnippet]:
       see |nvimrc-settings-autocompletion|.
 

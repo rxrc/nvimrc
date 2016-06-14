@@ -35,6 +35,9 @@ Plug 'chrisbra/colorizer'
 Plug 'kana/vim-textobj-user'
      \ | Plug 'kana/vim-textobj-entire'
 
+" Sneak
+Plug 'justinmk/vim-sneak'
+
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
