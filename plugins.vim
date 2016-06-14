@@ -99,6 +99,9 @@ Plug 'airblade/vim-gitgutter'
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
+" tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 "
 " Initialization Settings
 "

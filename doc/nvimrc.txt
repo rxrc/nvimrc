@@ -145,6 +145,7 @@ Shortcuts for common functions
     - <C-H>, <C-J>, <C-K>, and <C-L> move between splits,
       move the cursor, scroll through history, and navigate popups.
       They serve as general alternatives to the arrow keys when possible.
+      [Vim Tmux Navigator] implements split navigation.
     - Double tap <Leader> to toggle folds.
     - <Leader>x is an easier to input shortcut for gx.
     - <Leader>o clears the highlighting until next search.
