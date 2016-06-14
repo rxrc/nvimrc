@@ -6,6 +6,9 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
+" Libraries
+Plug 'tpope/vim-repeat'
+
 " Sensible Defaults
 Plug 'tpope/vim-sensible'
 
