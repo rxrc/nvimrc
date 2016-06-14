@@ -14,6 +14,7 @@ CONTENTS                                                      *nvimrc-contents*
     1.Intro....................................|nvimrc-intro|
         1.1.Structure..........................|nvimrc-structure|
     2.Settings.................................|nvimrc-settings|
+        2.1.Autocompletion settings............|nvimrc-settings-autocompletion|
     3.Mappings.................................|nvimrc-mappings|
         3.1.Custom Neovim mappings.............|nvimrc-mappings-custom|
     i.About....................................|nvimrc-about|
@@ -74,6 +75,20 @@ Environment
 Editor
     - Strips trailing whitespace on save.
 
+------------------------------------------------------------------------------
+2.1 Autocompletion settings                    *nvimrc-settings-autocompletion*
+
+Autocompletion is handled by deoplete and neosnippet.
+File type specific settings are defined under `plugin/autocompletion`.
+
+Mappings (not listed under |nvimrc-mappings|)
+    - <C-Space> starts manual completion.
+    - <Tab> navigates down completion popup.
+    - <C-J> and <C-K> navigate the popup in either direction.
+    - <C-L> inserts and navigates snippets.
+    - <CR> closes the popup (keep completion).
+    - <C-W> smart-closes the popup (cancel completion).
+
 ==============================================================================
 3. Mappings                                                   *nvimrc-mappings*
 
@@ -116,6 +131,8 @@ Critically different mappings
     - <Leader>q is mapped to q (since q is now mapped to ge).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
+    - Autocompletion with [deoplete] and [neosnippet]:
+      see |nvimrc-settings-autocompletion|.
 
 Shortcuts for common functions
     - <C-H>, <C-J>, <C-K>, and <C-L> move between splits,
