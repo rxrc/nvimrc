@@ -77,6 +77,9 @@ Plug 'rxrc/vim-snippets',
 " Neomake
 Plug 'neomake/neomake'
 
+" Projectionist
+Plug 'tpope/vim-projectionist'
+
 "
 " Initialization Settings
 "
