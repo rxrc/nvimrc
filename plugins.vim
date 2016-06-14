@@ -93,6 +93,9 @@ Plug 'rxrc/vim-snippets',
 " Neomake
 Plug 'neomake/neomake'
 
+" Git
+Plug 'airblade/vim-gitgutter'
+
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
