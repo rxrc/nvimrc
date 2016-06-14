@@ -42,6 +42,9 @@ Plug 'kana/vim-textobj-user'
 " Sneak
 Plug 'justinmk/vim-sneak'
 
+" Macros
+Plug 'bronson/vim-visual-star-search'
+
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
