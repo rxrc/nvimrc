@@ -64,6 +64,9 @@ Plug 'moll/vim-bbye'
 " Internal Interfaces
 "
 
+" Undo
+Plug 'mbbill/undotree'
+
 " Session
 Plug 'xolox/vim-misc'
      \ | Plug 'xolox/vim-session'
