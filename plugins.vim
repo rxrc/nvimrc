@@ -44,6 +44,7 @@ Plug 'justinmk/vim-sneak'
 
 " Macros
 Plug 'bronson/vim-visual-star-search'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 " Whitespace
@@ -129,6 +130,12 @@ let g:colorizer_auto_filetype = join([
 
 " Enable rainbow parentheses.
 let g:rainbow_active = 1
+
+"
+" vim-commentary
+
+" Disable \\ commentary maps.
+let g:commentary_map_backslash = 0
 
 "
 " deoplete

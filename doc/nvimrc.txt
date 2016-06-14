@@ -156,6 +156,7 @@ Shortcuts for common functions
       and <Leader>mm deletes and yanks the current line to the system clipboard.
     - <Leader>:, <Leader>/, and <Leader>? open the corresponding
       command-line or search window.
+    - [Commentary]: toggle commenting with \\.
 
 Shortcuts for windows, tabs, and splits
     - <Leader>{hjkl} splits the window.
@@ -356,6 +357,9 @@ m{motion}                          M moves to the end of line.
                                                         *:* *::*
 :                or     [EasyClip] Substitution operator.
 ::                                 :: substitutes the entire line.
+
+                                                        *\\*
+\\                      [Commentary] Mapped to gcc.
 
                                                         *<Leader>w* *<Leader>W*
 <Leader>{wW}            [Bbye] Close the buffer but not the window:
