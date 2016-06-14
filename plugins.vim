@@ -46,6 +46,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'bronson/vim-visual-star-search'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
