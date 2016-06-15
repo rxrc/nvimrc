@@ -176,6 +176,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
 
 Toggles
@@ -370,6 +371,9 @@ m{motion}                          M moves to the end of line.
 
                                                         *\\*
 \\                      [Commentary] Mapped to gcc.
+
+                                                        *<Leader>t* *<Leader>T*
+<Leader>{tT}            [Tagbar] Focus Tagbar panel with t, toggle with T.
 
                                                         *<Leader>u* *<Leader>U*
 <Leader>{uU}            [undotree] Focus undotree panel with u, toggle with U.

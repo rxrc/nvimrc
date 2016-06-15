@@ -67,6 +67,9 @@ Plug 'moll/vim-bbye'
 " Undo
 Plug 'mbbill/undotree'
 
+" Ctags
+Plug 'majutsushi/tagbar'
+
 " Session
 Plug 'xolox/vim-misc'
      \ | Plug 'xolox/vim-session'
