@@ -207,6 +207,9 @@ Plug 'tpope/vim-rbenv',
 Plug 'tpope/vim-bundler',
      \ { 'for': 'ruby' }
 
+Plug 'danchoi/ri.vim',
+     \ { 'for': 'ruby' }
+
 "
 " vim-airline
 
@@ -288,3 +291,9 @@ let g:fzf_command_prefix = 'Fzf'
 let g:polyglot_disabled = [
   \ 'latex'
   \ ]
+
+"
+" Ruby
+
+" Disable default ri.vim mappings.
+let g:ri_no_mappings = 1

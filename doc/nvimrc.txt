@@ -212,7 +212,7 @@ Interfaces
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
     - For some file types, d and D will provide an interface to
       documentation lookup.
-      Mapped for [fireplace].
+      Mapped for [ri] and [fireplace].
 
 Toggles
     - coa toggles [Rainbow Parentheses].
@@ -421,6 +421,10 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>d* *<Leader>D*
 <Leader>{dD}            [fireplace] Prompt to lookup documentation with
                                     `:Doc` or `:FindDoc`.
+
+                        [ri] Prompt to search for documentation:
+                             result window split horizontally (d)
+                             or vertically (D).
 
 
                                                         *<Leader>A*
