@@ -107,6 +107,9 @@ Plug 'shougo/vimproc.vim',
 " Neomake
 Plug 'neomake/neomake'
 
+" Network
+Plug 'eiginn/netrw'
+
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
