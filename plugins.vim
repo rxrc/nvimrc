@@ -47,6 +47,7 @@ Plug 'jnurmine/zenburn'
 "
 
 " Syntax
+Plug 'alvan/vim-closetag'
 Plug 'chrisbra/colorizer'
 Plug 'luochen1990/rainbow'
 
@@ -232,6 +233,19 @@ else
   let g:airline#extensions#promptline#snapshot_file = $HOME . '/.promptline.sh'
   let g:airline#extensions#tmuxline#snapshot_file = $HOME . '/.tmuxline.conf'
 endif
+
+"
+" closetag.vim
+
+" Enable for specific file types.
+let g:closetag_filenames = join([
+  \ '*.html',
+  \ '*.xhtml',
+  \ '*.phtml',
+  \ '*.hbs',
+  \ '*.js',
+  \ '*.jsx'
+  \ ], ',')
 
 "
 " colorizer
