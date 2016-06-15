@@ -161,6 +161,28 @@ Plug 'junegunn/fzf.vim'
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
 
+" Clojure
+Plug 'tpope/vim-fireplace',
+     \ { 'for': 'clojure' }
+
+Plug 'tpope/vim-salve',
+     \ { 'for': 'clojure' }
+
+Plug 'guns/vim-sexp',
+     \ { 'for': 'clojure' }
+
+Plug 'tpope/vim-sexp-mappings-for-regular-people',
+     \ { 'for': 'clojure' }
+
+Plug 'guns/vim-clojure-highlight',
+     \ { 'for': 'clojure' }
+
+Plug 'venantius/vim-cljfmt',
+     \ { 'for': 'clojure' }
+
+Plug 'venantius/vim-eastwood',
+     \ { 'for': 'clojure' }
+
 "
 " vim-airline
 

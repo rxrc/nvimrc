@@ -45,12 +45,14 @@ and vim-airline is set to use [Powerline fonts].
 - [The Silver Searcher (aka Ag)][ag], or [ack], or grep.
 - The [fzf] binary (vim-plug is not configured to manage it here).
   Additionally, [urxvt] is configured as the fzf launcher for the GUI.
+- See [vim-fireplace] for the Clojure specific plugin dependences.
 
 [ack]: http://beyondgrep.com/
 [ag]: http://geoff.greer.fm/ag/
 [curl]: https://curl.haxx.se/
 [fzf]: https://github.com/junegunn/fzf
 [urxvt]: http://software.schmorp.de/pkg/rxvt-unicode.html
+[vim-fireplace]: https://github.com/tpope/vim-fireplace
 
 ## Installation
 

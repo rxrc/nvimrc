@@ -209,6 +209,9 @@ Interfaces
     - [vimfiler]: open and focus with <Leader>i and toggle with <Leader>I.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
+    - For some file types, d and D will provide an interface to
+      documentation lookup.
+      Mapped for [fireplace].
 
 Toggles
     - coa toggles [Rainbow Parentheses].
@@ -407,6 +410,11 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>e* *<Leader>y*
 <Leader>{abey}          [Unite] Open a Unite.vim buffer:
                                 [a]g (grep), [b]uffers, fil[e]s, or [y]anks.
+
+                                                        *<Leader>d* *<Leader>D*
+<Leader>{dD}            [fireplace] Prompt to lookup documentation with
+                                    `:Doc` or `:FindDoc`.
+
 
                                                         *<Leader>A*
 <Leader>A               [Grepper] Prompt to search with Grepper.
