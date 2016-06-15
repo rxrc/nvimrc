@@ -287,6 +287,11 @@ let g:commentary_map_backslash = 0
 " Enable deoplete.
 let g:deoplete#enable_at_startup = 1
 
+" Initialize omni_patterns.
+if !exists('g:deoplete#omni_patterns')
+  let g:deoplete#omni_patterns = {}
+endif
+
 "
 " neosnippet
 
