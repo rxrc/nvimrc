@@ -111,6 +111,9 @@ Plug 'neomake/neomake'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+" Documentation
+Plug 'keith/investigate.vim'
+
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
