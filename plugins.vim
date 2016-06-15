@@ -7,6 +7,7 @@ let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
 " Libraries
+Plug 'konfekt/fastfold'
 Plug 'tpope/vim-repeat'
 
 " Sensible Defaults
