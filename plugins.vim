@@ -200,6 +200,13 @@ Plug 'lervag/vimtex',
 Plug 'tmhedberg/simpylfold',
      \ { 'for': 'python' }
 
+" Ruby
+Plug 'tpope/vim-rbenv',
+     \ { 'for': 'ruby' }
+
+Plug 'tpope/vim-bundler',
+     \ { 'for': 'ruby' }
+
 "
 " vim-airline
 
