@@ -188,6 +188,10 @@ Plug 'venantius/vim-cljfmt',
 Plug 'venantius/vim-eastwood',
      \ { 'for': 'clojure' }
 
+" Haskell
+Plug 'bitc/vim-hdevtools',
+     \ { 'for': 'haskell' }
+
 " LaTeX
 Plug 'lervag/vimtex',
      \ { 'for': 'tex' }
