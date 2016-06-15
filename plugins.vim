@@ -76,7 +76,10 @@ Plug 'xolox/vim-misc'
      \ | Plug 'xolox/vim-session'
 
 " Unicode
-Plug 'chrisbra/unicode.vim'
+let unicode_src = 'http://unicode.org/Public/UNIDATA/UnicodeData.txt'
+let unicode_dest = './autoload/unicode/UnicodeData.txt'
+Plug 'chrisbra/unicode.vim',
+     \ { 'do': join(['curl --create-dirs -o', unicode_dest, unicode_src], ' ')}
 
 " Autocompletion
 function! DoRemote(arg)
