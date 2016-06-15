@@ -197,6 +197,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [Autoformat]: <Leader>+ will run `:Autoformat`.
     - [fugitive] functions all begin with <Leader>g.
     - [fzf] functions all begin with <Leader>f.
     - [Unite] buffers are mapped to <Leader>{abey}.
@@ -427,6 +428,9 @@ m{motion}                          M moves to the end of line.
 <Leader>{wW}            [Bbye] Close the buffer but not the window:
                                w is a synonym for `:Bdelete` and
                                W is a synonym for `:Bdelete!`.
+
+                                                        *<Leader>+*
+<Leader>+               [Autoformat] Synonym for `:Autoformat`.
 
                                                         *<Leader>;*
                                                         *<Leader>;;*

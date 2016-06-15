@@ -107,6 +107,9 @@ Plug 'shougo/vimproc.vim',
 " Neomake
 Plug 'neomake/neomake'
 
+" Autoformat
+Plug 'chiel92/vim-autoformat'
+
 " Network
 Plug 'eiginn/netrw'
 
