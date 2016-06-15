@@ -117,6 +117,9 @@ Plug 'keith/investigate.vim'
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
+" Portkey
+Plug 'dsawardekar/portkey'
+
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
