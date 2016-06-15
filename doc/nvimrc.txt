@@ -16,6 +16,7 @@ CONTENTS                                                      *nvimrc-contents*
     2.Settings.................................|nvimrc-settings|
         2.1.Autocompletion settings............|nvimrc-settings-autocompletion|
         2.2.Unite settings.....................|nvimrc-settings-autocompletion|
+        2.3.vimfiler settings..................|nvimrc-settings-vimfiler|
     3.Mappings.................................|nvimrc-mappings|
         3.1.Custom Neovim mappings.............|nvimrc-mappings-custom|
         3.2.Plugin specific mappings...........|nvimrc-mappings-plugin|
@@ -100,6 +101,16 @@ Unite will use ag, ack, or grep in that order.
 Custom Unite buffer mappings
     - <C-J> and <C-K> navigate lines in insert mode.
     - <Esc> quits the buffer.
+
+------------------------------------------------------------------------------
+2.3 vimfiler settings                                *nvimrc-settings-vimfiler*
+
+Custom vimfiler buffer mappings
+    - <C-J>, <C-L>, and <Space> are reset to normal
+      and do not use their standard vimfiler mappings.
+    - <Tab> toggles marks.
+    - <Space><Space> switches to the directory history.
+    - <C-R> redraws the screen.
 
 ==============================================================================
 3. Mappings                                                   *nvimrc-mappings*
@@ -188,6 +199,7 @@ Shortcuts for buffer manipulation
 Interfaces
     - [Unite] buffers are mapped to <Leader>{abey}.
       See also |nvimrc-settings-unite|.
+    - [vimfiler]: open and focus with <Leader>i and toggle with <Leader>I.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
 
@@ -388,6 +400,9 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>e* *<Leader>y*
 <Leader>{abey}          [Unite] Open a Unite.vim buffer:
                                 [a]g (grep), [b]uffers, fil[e]s, or [y]anks.
+
+                                                        *<Leader>i* *<Leader>I*
+<Leader>{iI}            [vimfiler] Focus vimfiler panel with i, toggle with I.
 
                                                         *<Leader>t* *<Leader>T*
 <Leader>{tT}            [Tagbar] Focus Tagbar panel with t, toggle with T.

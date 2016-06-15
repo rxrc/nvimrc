@@ -94,6 +94,7 @@ Plug 'shougo/vimproc.vim',
      \ { 'do': 'make \|\| gmake' }
      \ | Plug 'shougo/unite.vim'
      \ | Plug 'shougo/neoyank.vim'
+     \ | Plug 'shougo/vimfiler.vim'
 
 "
 " External Interfaces
