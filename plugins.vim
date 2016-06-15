@@ -113,6 +113,10 @@ Plug 'tpope/vim-projectionist'
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
+" fzf
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
 "
 " Initialization Settings
 "
@@ -184,3 +188,9 @@ let neosnippet#snippets_directory = join([
   \ '../neocomplcache-snippets/neosnippets',
   \ '../vim-snippets/snippets'
   \ ], ',')
+
+"
+" fzf
+
+" Set fzf command prefix.
+let g:fzf_command_prefix = 'Fzf'
