@@ -89,6 +89,12 @@ Plug 'rxrc/neosnippet-snippets',
 Plug 'rxrc/vim-snippets',
      \ { 'branch': 'rxrc' }
 
+" Unite.vim
+Plug 'shougo/vimproc.vim',
+     \ { 'do': 'make \|\| gmake' }
+     \ | Plug 'shougo/unite.vim'
+     \ | Plug 'shougo/neoyank.vim'
+
 "
 " External Interfaces
 "

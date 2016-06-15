@@ -39,6 +39,13 @@ and vim-airline is set to use [Powerline fonts].
 [Inconsolata-g]: https://github.com/powerline/fonts/tree/master/Inconsolata-g
 [Powerline fonts]: https://github.com/powerline/fonts
 
+### Packages
+
+- [The Silver Searcher (aka Ag)][ag], or [ack], or grep.
+
+[ack]: http://beyondgrep.com/
+[ag]: http://geoff.greer.fm/ag/
+
 ## Installation
 
 ### Automatic Install

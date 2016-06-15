@@ -15,6 +15,7 @@ CONTENTS                                                      *nvimrc-contents*
         1.1.Structure..........................|nvimrc-structure|
     2.Settings.................................|nvimrc-settings|
         2.1.Autocompletion settings............|nvimrc-settings-autocompletion|
+        2.2.Unite settings.....................|nvimrc-settings-autocompletion|
     3.Mappings.................................|nvimrc-mappings|
         3.1.Custom Neovim mappings.............|nvimrc-mappings-custom|
         3.2.Plugin specific mappings...........|nvimrc-mappings-plugin|
@@ -90,6 +91,15 @@ Mappings (not listed under |nvimrc-mappings|)
     - <C-L> inserts and navigates snippets.
     - <CR> closes the popup (keep completion).
     - <C-W> smart-closes the popup (cancel completion).
+
+------------------------------------------------------------------------------
+2.2 Unite settings                                      *nvimrc-settings-unite*
+
+Unite will use ag, ack, or grep in that order.
+
+Custom Unite buffer mappings
+    - <C-J> and <C-K> navigate lines in insert mode.
+    - <Esc> quits the buffer.
 
 ==============================================================================
 3. Mappings                                                   *nvimrc-mappings*
@@ -176,6 +186,8 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [Unite] buffers are mapped to <Leader>{abey}.
+      See also |nvimrc-settings-unite|.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
 
@@ -371,6 +383,11 @@ m{motion}                          M moves to the end of line.
 
                                                         *\\*
 \\                      [Commentary] Mapped to gcc.
+
+                                                        *<Leader>a* *<Leader>b*
+                                                        *<Leader>e* *<Leader>y*
+<Leader>{abey}          [Unite] Open a Unite.vim buffer:
+                                [a]g (grep), [b]uffers, fil[e]s, or [y]anks.
 
                                                         *<Leader>t* *<Leader>T*
 <Leader>{tT}            [Tagbar] Focus Tagbar panel with t, toggle with T.
