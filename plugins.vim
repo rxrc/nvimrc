@@ -201,6 +201,10 @@ Plug 'lervag/vimtex',
 Plug 'tmhedberg/simpylfold',
      \ { 'for': 'python' }
 
+Plug 'davidhalter/jedi-vim',
+     \ { 'for': 'python' }
+     \ | Plug 'lambdalisue/vim-pyenv',
+              \ { 'for': 'python' }
 " Ruby
 Plug 'tpope/vim-rbenv',
      \ { 'for': 'ruby' }
