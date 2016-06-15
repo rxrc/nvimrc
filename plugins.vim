@@ -141,6 +141,13 @@ Plug 'junegunn/fzf.vim'
 "
 
 "
+" Language Interfaces
+"
+
+" Vim-polyglot
+Plug 'sheerun/vim-polyglot'
+
+"
 " vim-airline
 
 " Disable Powerline.
