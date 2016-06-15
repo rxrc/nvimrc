@@ -6,6 +6,20 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
+" Set Python host.
+if empty($VIM_PYTHON)
+  let g:python_host_prog = '/bin/python2'
+else
+  let g:python_host_prog = $VIM_PYTHON
+endif
+
+" Set Python 3 host.
+if empty($VIM_PYTHON3)
+  let g:python3_host_prog = '/bin/python3'
+else
+  let g:python_host_prog = $VIM_PYTHON3
+endif
+
 " Libraries
 Plug 'konfekt/fastfold'
 Plug 'tpope/vim-repeat'

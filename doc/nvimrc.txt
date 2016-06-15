@@ -75,6 +75,9 @@ Environment
     - Uses `$VIM_BACKGROUND` to set `background`.
     - Uses `$VIM_COLOR` to dynamically set airline theme.
     - Uses `$VIM_LANG` to set spelling language. Defaults to `en_us`.
+    - Uses `$VIM_PYTHON` and `$VIM_PYTHON3` to set paths to python hosts.
+      This is required to avoid conflicts with Python Virtual Environments.
+      Defaults to `/bin/python` and `/bin/python3`.
 
 Editor
     - Strips trailing whitespace on save.
