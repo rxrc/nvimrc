@@ -188,6 +188,10 @@ Plug 'venantius/vim-cljfmt',
 Plug 'venantius/vim-eastwood',
      \ { 'for': 'clojure' }
 
+" LaTeX
+Plug 'lervag/vimtex',
+     \ { 'for': 'tex' }
+
 "
 " vim-airline
 
@@ -261,3 +265,11 @@ let neosnippet#snippets_directory = join([
 
 " Set fzf command prefix.
 let g:fzf_command_prefix = 'Fzf'
+
+"
+" Vim-polyglot
+
+" Disable select language packs.
+let g:polyglot_disabled = [
+  \ 'latex'
+  \ ]
