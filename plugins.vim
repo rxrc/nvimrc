@@ -106,6 +106,7 @@ Plug 'neomake/neomake'
 
 " Git
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Projectionist
 Plug 'tpope/vim-projectionist'

@@ -197,6 +197,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [fugitive] functions all begin with <Leader>g.
     - [fzf] functions all begin with <Leader>f.
     - [Unite] buffers are mapped to <Leader>{abey}.
       See also |nvimrc-settings-unite|.
@@ -407,6 +408,11 @@ m{motion}                          M moves to the end of line.
 <Leader>f<Space>        [fzf] Open a fzf search, e.g.,
                               <Leader>ff is a synonym for `:FzfFiles`.
                               Use <Leader>fm to lookup the other mappings.
+
+                                                        *<Leader>g*
+<Leader>g{abcdeghjklmrsw}
+                        [fugitive] Synonyms for git wrapper commands.
+                                   Use <Leader>fm to lookup the other mappings.
 
                                                         *<Leader>i* *<Leader>I*
 <Leader>{iI}            [vimfiler] Focus vimfiler panel with i, toggle with I.
