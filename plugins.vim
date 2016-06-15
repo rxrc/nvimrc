@@ -161,6 +161,11 @@ Plug 'junegunn/fzf.vim'
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
 
+" Emmet
+Plug 'mattn/emmet-vim',
+     \ { 'for': ['css', 'html', 'html.handlebars',
+     \           'javascript.jsx', 'liquid', 'sass', 'scss'] }
+
 " Clojure
 Plug 'tpope/vim-fireplace',
      \ { 'for': 'clojure' }

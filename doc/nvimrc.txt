@@ -184,6 +184,7 @@ Shortcuts for common functions
     - <Leader>:, <Leader>/, and <Leader>? open the corresponding
       command-line or search window.
     - [Commentary]: toggle commenting with \\.
+    - [Emmet] leader is <C-E> and expander is <C-O>.
 
 Shortcuts for windows, tabs, and splits
     - <Leader>{hjkl} splits the window.
@@ -405,6 +406,12 @@ m{motion}                          M moves to the end of line.
 
                                                         *\\*
 \\                      [Commentary] Mapped to gcc.
+
+                                                        *<C-E>*
+<C-E>                   [Emmet] In insert mode, emmet leader key.
+
+                                                        *<C-O>*
+<C-O>                   [Emmet] In insert mode, Emmet expander key.
 
                                                         *<Leader>a* *<Leader>b*
                                                         *<Leader>e* *<Leader>y*
