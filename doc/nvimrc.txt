@@ -197,6 +197,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [Grepper]: <Leader>A will search with Grepper.
     - [Autoformat]: <Leader>+ will run `:Autoformat`.
     - [fugitive] functions all begin with <Leader>g.
     - [fzf] functions all begin with <Leader>f.
@@ -403,6 +404,9 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>e* *<Leader>y*
 <Leader>{abey}          [Unite] Open a Unite.vim buffer:
                                 [a]g (grep), [b]uffers, fil[e]s, or [y]anks.
+
+                                                        *<Leader>A*
+<Leader>A               [Grepper] Prompt to search with Grepper.
 
                                                         *<Leader>f*
 <Leader>f{acdefhjklmqstv/} or

@@ -129,6 +129,9 @@ Plug 'dsawardekar/portkey'
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
+" Grepper
+Plug 'mhinz/vim-grepper'
+
 " fzf
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
