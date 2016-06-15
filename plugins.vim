@@ -196,6 +196,10 @@ Plug 'bitc/vim-hdevtools',
 Plug 'lervag/vimtex',
      \ { 'for': 'tex' }
 
+" Python
+Plug 'tmhedberg/simpylfold',
+     \ { 'for': 'python' }
+
 "
 " vim-airline
 
