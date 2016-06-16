@@ -18,6 +18,9 @@ nnoremap <silent> <Leader>fm :<C-U>FzfMaps<CR>
 
 " Set overrides only when fzf is installed.
 if executable('fzf')
+  " Use fzf for path completion.
+  imap <C-X><C-F> <Plug>(fzf-complete-path)
+
   " Use fzf for dictionary completion.
   if filereadable('/usr/share/dict/words')
     imap <C-X><C-K> <Plug>(fzf-complete-word)
