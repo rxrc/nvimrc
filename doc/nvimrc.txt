@@ -81,7 +81,7 @@ Environment
 
 Editor
     - Strips trailing whitespace on save.
-    - Use [fzf] for path and dictionary completion.
+    - Use [fzf] for line, path, and dictionary completion.
 
 ------------------------------------------------------------------------------
 2.1 Autocompletion settings                    *nvimrc-settings-autocompletion*

@@ -18,6 +18,9 @@ nnoremap <silent> <Leader>fm :<C-U>FzfMaps<CR>
 
 " Set overrides only when fzf is installed.
 if executable('fzf')
+  " Use fzf for line completion.
+  imap <C-X><C-L> <Plug>(fzf-complete-line)
+
   " Use fzf for path completion.
   imap <C-X><C-F> <Plug>(fzf-complete-path)
 
