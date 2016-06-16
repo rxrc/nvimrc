@@ -18,3 +18,8 @@ let g:zenburn_high_Contrast = 1
 let g:airline_theme = 'zenburn'
 set background=dark
 colorscheme zenburn
+
+" Set default fzf command.
+if executable('fzf') && executable('ag')
+  let $FZF_DEFAULT_COMMAND = '(ag -g "")'
+endif
