@@ -45,6 +45,7 @@ and vim-airline is set to use [Powerline fonts].
 - [The Silver Searcher (aka Ag)][ag], or [ack], or grep.
 - The [fzf] binary (vim-plug is not configured to manage it here).
   Additionally, [urxvt] is configured as the fzf launcher for the GUI.
+  For fzf dictionary completion: `/usr/share/dict/words`.
 - [Jedi] for Python 2 and 3.
 - See [vim-fireplace] for the Clojure specific plugin dependences.
 

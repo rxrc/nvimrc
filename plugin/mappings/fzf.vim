@@ -15,3 +15,11 @@ nnoremap <silent> <Leader>f<Space> :<C-U>FzfHistory:<CR>
 nnoremap <silent> <Leader>f/ :<C-U>FzfHistory/<CR>
 nnoremap <silent> <Leader>fv :<C-U>FzfCommands<CR>
 nnoremap <silent> <Leader>fm :<C-U>FzfMaps<CR>
+
+" Set overrides only when fzf is installed.
+if executable('fzf')
+  " Use fzf for dictionary completion.
+  if filereadable('/usr/share/dict/words')
+    imap <C-X><C-K> <Plug>(fzf-complete-word)
+  endif
+endif
