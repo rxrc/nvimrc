@@ -207,6 +207,7 @@ Interfaces
     - [fzf] functions all begin with <Leader>f.
     - [Unite] buffers are mapped to <Leader>{abey}.
       See also |nvimrc-settings-unite|.
+      If [fzf] is installed, will prioritize over Unite for some buffers.
     - [vimfiler]: open and focus with <Leader>i and toggle with <Leader>I.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
@@ -222,6 +223,7 @@ Toggles
     - cop toggles the <Leader>p, <Leader>P, and <Leader>c
       mappings between using the `+` (default) and `*` registers.
     - coz toggles [Unicode] name or glyph completion.
+    - coU toggles mappings between using [fzf] and [Unite].
 
 ------------------------------------------------------------------------------
 3.1 Custom Neovim mappings                             *nvimrc-mappings-custom*
@@ -396,6 +398,10 @@ cof                     [EasyClip] Toggle paste formatting.
                                                         *coz*
 coz                     [Unicode] Toggle unicode name or glyph completion.
 
+                                                        *coU*
+coU                     [fzf] [Unite] Toggle between fzf and Unite.
+
+
                                                         *m* *M* *mm*
 mm               or     [EasyClip] Move motion.
 M                or                mm moves the current line.
@@ -418,6 +424,8 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>e* *<Leader>y*
 <Leader>{abey}          [Unite] Open a Unite.vim buffer:
                                 [a]g (grep), [b]uffers, fil[e]s, or [y]anks.
+
+                        [fzf]   If installed, selectively use fzf instead.
 
                                                         *<Leader>d* *<Leader>D*
 <Leader>{dD}            [fireplace] Prompt to lookup documentation with

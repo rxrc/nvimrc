@@ -1,9 +1,45 @@
 " Add mappings for Unite buffers.
-nnoremap <Leader>a :<C-U>Unite grep:.<CR>
-nnoremap <Leader>b :<C-U>Unite -no-split -buffer-name=buffer
-  \ -start-insert buffer<CR>
-nnoremap <Leader>e :<C-U>Unite -no-split -buffer-name=files
-  \ -start-insert file_rec/async:!<CR>
+function! UniteMappings(quiet)
+  nnoremap <Leader>a :<C-U>Unite grep:.<CR>
+  nnoremap <Leader>b :<C-U>Unite -no-split -buffer-name=buffer
+    \ -start-insert buffer<CR>
+  nnoremap <Leader>e :<C-U>Unite -no-split -buffer-name=files
+    \ -start-insert file_rec/async:!<CR>
+
+  " Save that Unite mappings were created.
+  let g:mapped_unite = 1
+
+  if !a:quiet
+    echo 'Now using Unite'
+  endif
+endfunction
+
+" Overrides mappings only when fzf is installed.
+if executable('fzf')
+  " Add shortcuts to fzf mappings.
+  function! FzfMappings(quiet)
+    nmap <Leader>a <Leader>fa
+    nmap <Leader>b <Leader>fj
+    nmap <Leader>e <Leader>ff
+
+    " Save that Unite mappings were removed.
+    let g:mapped_unite = 0
+
+    if !a:quiet
+      echo 'Now using fzf'
+    endif
+  endfunction
+
+  " Toggle between Unite and fzf mappings.
+  nnoremap <silent><expr> coU
+    \ g:mapped_unite ?
+    \ ":<C-U>call FzfMappings(0)<CR>" :
+    \ ":<C-U>call UniteMappings(0)<CR>"
+
+  call FzfMappings(1)
+elseif
+  call UniteMappings(1)
+end
 
 " Add mapping for Unite neoyank buffer.
 nnoremap <Leader>y :<C-U>Unite -no-split -buffer-name=yank history/yank<CR>
