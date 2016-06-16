@@ -135,6 +135,9 @@ Plug 'tpope/vim-fugitive'
 " Documentation
 Plug 'keith/investigate.vim'
 
+" Thesaurus
+Plug 'ron89/thesaurus_query.vim'
+
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
