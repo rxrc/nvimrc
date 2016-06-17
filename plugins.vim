@@ -122,6 +122,9 @@ Plug 'shougo/vimproc.vim',
 " Neomake
 Plug 'neomake/neomake'
 
+" Terminal
+Plug 'kassio/neoterm'
+
 " Autoformat
 Plug 'chiel92/vim-autoformat'
 

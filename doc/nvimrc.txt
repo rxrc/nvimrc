@@ -201,6 +201,7 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - [neoterm] <Leader><BS> opens a terminal.
     - [Grepper]: <Leader>A will search with Grepper.
     - [Autoformat]: <Leader>+ will run `:Autoformat`.
     - [fugitive] functions all begin with <Leader>g.
@@ -478,6 +479,9 @@ m{motion}                          M moves to the end of line.
 <Leader>;{signature-mapping} or
 <Leader>;;              [Signature] <Leader>; is the signature leader.
                                     <Leader>;; will toggle marks (<Leader>;.).
+
+                                                        *+Leader><BS>*
+<Leader><BS>               [neoterm] Synonym for `:Topen`.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
