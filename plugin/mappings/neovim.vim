@@ -5,10 +5,6 @@ inoremap <CR> <Esc>
 nmap <C-CR> i<C-CR>
 nmap <S-CR> i<C-CR>
 
-" Add shortcut to split lines.
-" Required if terminal does not support ctrl-enter or shift-enter.
-nmap <LocalLeader><Leader> i<C-CR><Esc>
-
 " Use enter to open command-line mode.
 nnoremap <CR> :
 vnoremap <CR> :
