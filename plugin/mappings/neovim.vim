@@ -75,6 +75,15 @@ nnoremap <Leader><Leader> za
 " Add shortcut to open external links.
 nmap <Leader>x gx
 
+" Add shortcuts to navigate out of the terminal.
+augroup neovim-terminal-mappings
+  autocmd!
+  autocmd TermOpen * tmap <buffer> <C-H> <C-\><C-N><C-H>
+  autocmd TermOpen * tmap <buffer> <C-J> <C-\><C-N><C-J>
+  autocmd TermOpen * tmap <buffer> <C-K> <C-\><C-N><C-K>
+  autocmd TermOpen * tmap <buffer> <C-L> <C-\><C-N><C-W>
+augroup END
+
 " Add shortcuts to split the window.
 nnoremap <silent> <Leader>h :<C-U>leftabove vsplit<CR>
 nnoremap <silent> <Leader>l :<C-U>rightbelow vsplit<CR>

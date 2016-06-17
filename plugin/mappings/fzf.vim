@@ -16,6 +16,15 @@ nnoremap <silent> <Leader>f/ :<C-U>FzfHistory/<CR>
 nnoremap <silent> <Leader>fv :<C-U>FzfCommands<CR>
 nnoremap <silent> <Leader>fm :<C-U>FzfMaps<CR>
 
+" Reset any conflicting terminal mappings.
+augroup fzf-terminal-mappings
+  autocmd!
+  autocmd FileType fzf tunmap <buffer> <C-H>
+  autocmd FileType fzf tunmap <buffer> <C-J>
+  autocmd FileType fzf tunmap <buffer> <C-K>
+  autocmd FileType fzf tunmap <buffer> <C-L>
+augroup END
+
 " Set overrides only when fzf is installed.
 if executable('fzf')
   " Use fzf for line completion.
