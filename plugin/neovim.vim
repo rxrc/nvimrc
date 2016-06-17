@@ -36,3 +36,6 @@ set shortmess+=c
 
 " Enable omni completion.
 set omnifunc=syntaxcomplete#Complete
+
+" Set default tex flavor.
+let g:tex_flavor='latex'
