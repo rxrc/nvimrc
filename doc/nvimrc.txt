@@ -202,6 +202,8 @@ Shortcuts for buffer manipulation
 
 Interfaces
     - [neoterm] <Leader><BS> opens a terminal.
+    - [test] Run tests with <Leader>R, <Leader>rr, <Leader>ra, and <Leader>rl.
+      Visit last test with <Leader>rg.
     - [Grepper]: <Leader>A will search with Grepper.
     - [Autoformat]: <Leader>+ will run `:Autoformat`.
     - [fugitive] functions all begin with <Leader>g.
@@ -459,6 +461,13 @@ m{motion}                          M moves to the end of line.
 
                                                         *<Leader>i* *<Leader>I*
 <Leader>{iI}            [vimfiler] Focus vimfiler panel with i, toggle with I.
+
+                                                        *<Leader>r*
+                                                        *<Leader>R*
+                                                        *<Leader>rr*
+<Leader>rr       or     [test] Run tests: rr runs nearest, R runs file,
+<Leader>R        or            ra runs all, rl runs last.
+<Leader>r{agl}                 Use rg to return to the last test.
 
                                                         *<Leader>t* *<Leader>T*
 <Leader>{tT}            [Tagbar] Focus Tagbar panel with t, toggle with T.

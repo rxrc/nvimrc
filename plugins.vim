@@ -124,6 +124,7 @@ Plug 'neomake/neomake'
 
 " Terminal
 Plug 'kassio/neoterm'
+Plug 'janko-m/vim-test'
 
 " Autoformat
 Plug 'chiel92/vim-autoformat'
