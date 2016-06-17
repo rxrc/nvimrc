@@ -267,6 +267,10 @@ U                       Mapped to <C-R> (redo).
                         Use <Leader>: to open command-line mode
                         from these windows.
 
+                                                        *<C-CR>*
+<C-CR>                  Insert a newline in normal or insert mode.
+                        Exit to normal mode from terminal.
+
                                                         *<S-CR>*
 <S-CR>                  Insert a newline in normal or insert mode.
 
