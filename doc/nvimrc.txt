@@ -147,6 +147,7 @@ in square brackets.
 Critically different mappings
     - <Leader> is set to <Space> and <LocalLeader> is \.
     - Enter (or <Esc>) leaves insert mode.
+      <C-CR> leaves terminal insert mode.
     - Use <C-CR> or <S-CR> to insert a newline (split the line)
       in normal or insert mode.
       Use \<Space> to split lines in normal mode for terminals

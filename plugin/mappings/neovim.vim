@@ -76,6 +76,7 @@ nnoremap <Leader><Leader> za
 nmap <Leader>x gx
 
 " Add shortcuts to navigate out of the terminal.
+tnoremap <C-CR> <C-\><C-N>
 augroup neovim-terminal-mappings
   autocmd!
   autocmd TermOpen * tmap <buffer> <C-H> <C-\><C-N><C-H>
