@@ -26,3 +26,8 @@ augroup spellfile-local-spellfile
   autocmd!
   autocmd FileType * call s:spell_auto_local_spellfile()
 augroup END
+
+" Disable spelling in terminal.
+augroup spell-terminal
+  autocmd TermOpen * setlocal nospell
+augroup END
