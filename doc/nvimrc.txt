@@ -215,10 +215,9 @@ Interfaces
     - [vimfiler]: open and focus with <Leader>i and toggle with <Leader>I.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
-    - [Jedi] Rename is <Leader>R and usages is <Leader>N.
     - For some file types, d and D will provide an interface to
       documentation lookup.
-      Mapped for [fireplace], [Jedi] (goto commands), and [ri].
+      Mapped for [fireplace], and [ri].
 
 Toggles
     - coa toggles [Rainbow Parentheses].
@@ -438,8 +437,6 @@ m{motion}                          M moves to the end of line.
                                                         *<Leader>d* *<Leader>D*
 <Leader>{dD}            [fireplace] Prompt to lookup documentation with
                                     `:Doc` or `:FindDoc`.
-
-                        [Jedi] Goto command (d) or goto assignments command.
 
                         [ri] Prompt to search for documentation:
                              result window split horizontally (d)

@@ -208,7 +208,7 @@ Plug 'lervag/vimtex',
 Plug 'tmhedberg/simpylfold',
      \ { 'for': 'python' }
 
-Plug 'davidhalter/jedi-vim',
+Plug 'zchee/deoplete-jedi',
      \ { 'for': 'python' }
      \ | Plug 'lambdalisue/vim-pyenv',
               \ { 'for': 'python' }
