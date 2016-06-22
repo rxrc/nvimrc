@@ -314,6 +314,11 @@ let neosnippet#snippets_directory = join([
 " Set fzf command prefix.
 let g:fzf_command_prefix = 'Fzf'
 
+" Set default fzf command.
+if executable('fzf') && executable('ag')
+  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+endif
+
 "
 " Vim-polyglot
 
