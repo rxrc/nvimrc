@@ -136,8 +136,8 @@ nnoremap <silent> <C-Q> :<C-U>quitall<CR>
 " Add shortcut to paste from the expression register.
 nnoremap <Leader>= :<C-U>put =
 
-" Use <Leader>' for M.
-nnoremap <Leader>' M
+" Use <C-;> for M.
+nnoremap <C-;> M
 
 " Adds mappings for the system clipboard.
 function! SystemClipboardMappings(register, quiet)
