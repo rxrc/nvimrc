@@ -191,7 +191,7 @@ Shortcuts for windows, tabs, and splits
     - <Leader>{hjkl} splits the window.
     - <Leader>{HJKL} splits the frame.
     - <Leader><Tab> opens a new tab and <Leader><S-Tab> closes the tab.
-    - <Leader>, and <Leader>. cycle through tabs.
+    - <C-,> and <C-.> cycles through tabs.
 
 Shortcuts for buffer manipulation
     - <Leader><CR> is a synonym for `:quit` and <Leader>Q for `:quit!`.
