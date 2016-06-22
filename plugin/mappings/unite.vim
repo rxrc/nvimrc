@@ -20,7 +20,7 @@ if executable('fzf')
   function! FzfMappings(quiet)
     nmap <Leader>a <Leader>fa
     nmap <Leader>b <Leader>fj
-    nmap <Leader>e <Leader>ff
+    nmap <Leader>e <Leader>fg
 
     " Save that Unite mappings were removed.
     let g:mapped_unite = 0

@@ -1,5 +1,6 @@
 " Add mappings for fzf commands.
 nnoremap <silent> <Leader>ff :<C-U>FzfFiles<CR>
+nnoremap <silent> <Leader>fg :<C-U>FzfGitFiles<CR>
 nnoremap <silent> <Leader>fs :<C-U>FzfHistory<CR>
 nnoremap <silent> <Leader>fa :<C-U>FzfAg<CR>
 nnoremap <silent> <Leader>fd :<C-U>FzfHelptags<CR>
