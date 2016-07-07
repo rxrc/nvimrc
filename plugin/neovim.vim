@@ -39,3 +39,6 @@ set omnifunc=syntaxcomplete#Complete
 
 " Set default tex flavor.
 let g:tex_flavor='latex'
+
+" Set WildMenu preferences.
+set wildmode=longest:full,full
