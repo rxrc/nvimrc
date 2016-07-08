@@ -495,7 +495,7 @@ m{motion}                          M moves to the end of line.
                                     <Leader>;; will toggle marks (<Leader>;.).
 
                                                         *+Leader><BS>*
-<Leader><BS>               [neoterm] Synonym for `:Topen`.
+<Leader><BS>            [neoterm] Synonym for `:Topen`.
 
 ==============================================================================
 i. About                                                         *nvimrc-about*
