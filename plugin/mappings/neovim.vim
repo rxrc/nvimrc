@@ -2,8 +2,8 @@
 inoremap <CR> <Esc>
 
 " Use ctrl-enter or shift-enter to split lines in normal mode.
-nmap <C-CR> i<C-CR>
-nmap <S-CR> i<C-CR>
+nmap <C-CR> i<C-CR><Esc>
+nmap <S-CR> i<C-CR><Esc>
 
 " Use enter to open command-line mode.
 nnoremap <CR> :
