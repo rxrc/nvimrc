@@ -62,17 +62,14 @@ cnoremap <C-K> <Up>
 cnoremap <C-J> <Down>
 
 " Provide alternate mapping for q since it is overridden above.
-nnoremap <Leader>q q
-vnoremap <Leader>q q
+nnoremap <Tab> q
+nnoremap <Tab><Tab> qq<Esc>
+vnoremap <Tab> q
+vnoremap <Tab><Tab> qq
 
-" Add shortcut for qq and @q.
-nnoremap <C-Q> qq<Esc>
-vnoremap <C-Q> qq
-nnoremap <C-G> @q
-vnoremap <C-G> @q
-
-" Remap select mode.
-vnoremap <C-'> <C-G>
+" Add shortcut for @q.
+nnoremap <C-Q> @q
+vnoremap <C-Q> @q
 
 " Add shortcut to toggle folds.
 nnoremap <Leader><Leader> za
@@ -135,9 +132,11 @@ nnoremap <silent> <Leader>S :<C-U>write!<CR>
 nnoremap <silent> <Leader><CR> :<C-U>quit<CR>
 vnoremap <silent> <Leader><CR> :<C-U>quit<CR>
 
-" Add shortcuts for quit all.
-nnoremap <silent> <Leader>Q :<C-U>quitall<CR>
-vnoremap <silent> <Leader>Q :<C-U>quitall<CR>
+" Add shortcuts for force quit and quit all.
+nnoremap <silent> <Leader>q :<C-U>quitall<CR>
+vnoremap <silent> <Leader>q :<C-U>quitall<CR>
+nnoremap <silent> <Leader>Q :<C-U>quitall!<CR>
+vnoremap <silent> <Leader>Q :<C-U>quitall!<CR>
 
 " Add shortcut to paste from the expression register.
 nnoremap <Leader>= :<C-U>put =

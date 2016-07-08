@@ -155,8 +155,7 @@ Critically different mappings
     - <S-Esc> toggles the command-line window in normal or visual mode.
     - U is mapped to redo and <C-R> is mapped to the original U key.
     - q and Q provide single key mappings for ge and gE.
-    - <Leader>q is mapped to q (since q is now mapped to ge).
-    - <C-'> enters select mode from visual mode.
+    - <Tab> is mapped to q (since q is now mapped to ge).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
     - : is the [EasyClip] substitution operator.
@@ -173,7 +172,7 @@ Shortcuts for common functions
       They serve as general alternatives to the arrow keys when possible.
       [Vim Tmux Navigator] implements split navigation.
     - Double tap <Leader> to toggle folds.
-    - Use <C-Q> to record to `@q` and <C-G> to playback `@q`.
+    - Use <Tab><Tab> to record to `@q` and <C-Q> to playback `@q`.
     - <Leader>x is an easier to input shortcut for gx.
     - <Leader>o clears the highlighting until next search.
     - <Leader>= inserts from the expression register.
@@ -197,7 +196,8 @@ Shortcuts for windows, tabs, and splits
 
 Shortcuts for buffer manipulation
     - <Leader><CR> is a synonym for `:quit`.
-    - <Leader>Q is a synonym for `:quitall`.
+    - <Leader>q is a synonym for `:quitall`.
+    - <Leader>Q is a synonym for `:quitall!`.
     - <Leader>n is a synonym for `:enew`.
     - <Leader>E is a synonym for `:edit!`.
     - <Leader>s and <Leader>S are synonyms for `:update` and `:write!`.
@@ -283,9 +283,6 @@ U                       Mapped to <C-R> (redo).
 <S-Esc>                 In normal or visual mode, toggle opening
                         and closing the command-line window.
 
-                                                        *<C-G>*
-<C-G>                   Mapped to @q.
-
                                                         *<C-H>*
 <C-H>                   In insert mode and command-line mode,
                         move cursor one character right.
@@ -301,13 +298,10 @@ U                       Mapped to <C-R> (redo).
                         move cursor one character right.
 
                                                         *<C-Q>*
-<C-Q>                   Mapped to qq.
+<C-Q>                   Mapped to @q.
 
                                                         *<C-R>*
 <C-R>                   Mapped to U.
-
-                                                        *<C-'>*
-<C-'>                   In visual mode, mapped to <C-G> (select mode).
 
                                                         *<C-;>*
 <C-;>                   Mapped to M.
@@ -351,10 +345,10 @@ U                       Mapped to <C-R> (redo).
                         Can toggle between + and * registers using |cop|.
 
                                                         *<Leader>q*
-<Leader>q               Mapped to q.
+<Leader>q               Synonym for `:quitall`.
 
                                                         *<Leader>Q*
-<Leader>Q               Synonym for `:quitall`.
+<Leader>Q               Synonym for `:quitall!`.
 
                                                         *<Leader>s*
 <Leader>s               Synonym for `:update`.
