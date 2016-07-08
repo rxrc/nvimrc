@@ -141,8 +141,8 @@ vnoremap <silent> <Leader>Q :<C-U>quitall!<CR>
 " Add shortcut to paste from the expression register.
 nnoremap <Leader>= :<C-U>put =
 
-" Use <C-;> for M.
-nnoremap <C-;> M
+" Use <C-G> for M.
+nnoremap <C-G> M
 
 " Adds mappings for the system clipboard.
 function! SystemClipboardMappings(register, quiet)
@@ -161,6 +161,10 @@ function! SystemClipboardMappings(register, quiet)
   " Paste from system clipboard.
   exec 'nnoremap <Leader>p "' . a:register . 'p'
   exec 'nnoremap <Leader>P "' . a:register . 'P'
+
+  " Substitute from the system clipboard with easyclip.
+  exec 'nmap <C-;> "' . a:register . ':'
+  exec 'nmap <C-;><C-;> "' . a:register . '::'
 
   " Save the newly mapped register.
   let g:mapped_system_clipboard = a:register

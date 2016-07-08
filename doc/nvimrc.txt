@@ -158,8 +158,9 @@ Critically different mappings
     - <Tab> is mapped to q (since q is now mapped to ge).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
+    - [EasyClip] takes over m and M (<C-G> is mapped to M).
     - : is the [EasyClip] substitution operator.
-    - [EasyClip] takes over m and M (<C-;> is mapped to M).
+      and <C-;> is the substitution operator for the system clipboard.
     - [Sneak] takes over s and S.
     - Marks are handled by [Signature] with <Leader>;.
       Use <Leader>;; to toggle marks.
@@ -283,6 +284,9 @@ U                       Mapped to <C-R> (redo).
 <S-Esc>                 In normal or visual mode, toggle opening
                         and closing the command-line window.
 
+                                                        *<C-G>*
+<C-G>                   Mapped to M.
+
                                                         *<C-H>*
 <C-H>                   In insert mode and command-line mode,
                         move cursor one character right.
@@ -302,9 +306,6 @@ U                       Mapped to <C-R> (redo).
 
                                                         *<C-R>*
 <C-R>                   Mapped to U.
-
-                                                        *<C-;>*
-<C-;>                   Mapped to M.
 
                                                         *<Leader>c*
                                                         *<Leader>C*
@@ -425,6 +426,10 @@ m{motion}                          M moves to the end of line.
 
                                                         *<C-E>*
 <C-E>                   [Emmet] In insert mode, emmet leader key.
+
+                                                        *<C-G>* *<C-G><C-G>*
+<C-G>            or     [EasyClip] Substitution operator for system clipboard.
+<C-G><C-G>                         <C-G><C-G> substitutes the entire line.
 
                                                         *<C-O>*
 <C-O>                   [Emmet] In insert mode, Emmet expander key.
