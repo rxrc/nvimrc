@@ -196,6 +196,9 @@ Plug 'venantius/vim-cljfmt',
 Plug 'venantius/vim-eastwood',
      \ { 'for': 'clojure' }
 
+Plug 'severeoverfl0w/async-clj-omni',
+     \ { 'for': 'clojure' }
+
 " Haskell
 Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
@@ -293,6 +296,11 @@ let g:commentary_map_backslash = 0
 
 " Enable deoplete.
 let g:deoplete#enable_at_startup = 1
+
+" Initialize keyword_patterns.
+if !exists('g:deoplete#keyword_patterns')
+  let g:deoplete#keyword_patterns = {}
+endif
 
 " Initialize omni_patterns.
 if !exists('g:deoplete#omni_patterns')
