@@ -67,6 +67,9 @@ nnoremap <Tab><Tab> qq<Esc>
 vnoremap <Tab> q
 vnoremap <Tab><Tab> qq
 
+" Provide alternate mapping for tab.
+nnoremap <C-Tab> <Tab>
+
 " Add shortcut for @q.
 nnoremap <C-Q> @q
 vnoremap <C-Q> @q

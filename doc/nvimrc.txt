@@ -156,6 +156,7 @@ Critically different mappings
     - U is mapped to redo and <C-R> is mapped to the original U key.
     - q and Q provide single key mappings for ge and gE.
     - <Tab> is mapped to q (since q is now mapped to ge).
+    - <C-Tab> navigates the jump list in reverse (<C-I>).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
     - [EasyClip] takes over m and M (<C-G> is mapped to M).
@@ -283,6 +284,9 @@ U                       Mapped to <C-R> (redo).
                                                         *<S-Esc>*
 <S-Esc>                 In normal or visual mode, toggle opening
                         and closing the command-line window.
+
+                                                        *<C-Tab>*
+<C-Tab>                 Mapped to <C-I> (equivalent to <Tab>).
 
                                                         *<C-G>*
 <C-G>                   Mapped to M.
