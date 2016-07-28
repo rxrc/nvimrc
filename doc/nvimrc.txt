@@ -87,14 +87,15 @@ Editor
 ------------------------------------------------------------------------------
 2.1 Autocompletion settings                    *nvimrc-settings-autocompletion*
 
-Autocompletion is handled by deoplete and neosnippet.
+Autocompletion is handled by deoplete and UltiSnips.
 File type specific settings are defined under `plugin/autocompletion`.
 
 Mappings (not listed under |nvimrc-mappings|)
-    - <C-Space> starts manual completion.
-    - <Tab> navigates down completion popup.
+    - <C-Space> opens the Unite UltiSnips buffer from normal mode.
+    - <C-Space> starts manual completion from insert mode.
     - <C-J> and <C-K> navigate the popup in either direction.
     - <C-L> inserts and navigates snippets.
+    - <C-H> acts as backspace while the popup is open.
     - <CR> closes the popup (keep completion).
     - <C-W> smart-closes the popup (cancel completion).
 
@@ -128,7 +129,7 @@ the corresponding plugin, e.g., `fzf.vim`.
 
 Alternatively, mappings spanning several interrelated plugs may be
 grouped under a single file, e.g., `autocompletion.vim` may
-contain mappings for deoplete, neosnippet, etc.
+contain mappings for deoplete, UltiSnips, etc.
 (in which case the plugin names will appear in a comment if unspecified).
 
 The special file `neovim.vim` is reserved for native Neovim mappings.
@@ -165,7 +166,7 @@ Critically different mappings
     - [Sneak] takes over s and S.
     - Marks are handled by [Signature] with <Leader>;.
       Use <Leader>;; to toggle marks.
-    - Autocompletion with [deoplete] and [neosnippet]:
+    - Autocompletion with [deoplete] and [UltiSnips]:
       see |nvimrc-settings-autocompletion|.
 
 Shortcuts for common functions

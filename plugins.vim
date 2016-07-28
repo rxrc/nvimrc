@@ -102,9 +102,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'shougo/deoplete.nvim',
      \ { 'do': function('DoRemote') }
-Plug 'shougo/neosnippet'
-Plug 'rxrc/neosnippet-snippets',
-     \ { 'branch': 'rxrc' }
+Plug 'sirver/ultisnips'
 Plug 'rxrc/vim-snippets',
      \ { 'branch': 'rxrc' }
 
@@ -306,15 +304,6 @@ endif
 if !exists('g:deoplete#omni_patterns')
   let g:deoplete#omni_patterns = {}
 endif
-
-"
-" neosnippet
-
-" Set snippet paths.
-let neosnippet#snippets_directory = join([
-  \ '../neocomplcache-snippets/neosnippets',
-  \ '../vim-snippets/snippets'
-  \ ], ',')
 
 "
 " fzf

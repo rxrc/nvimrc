@@ -31,6 +31,9 @@ set nofoldenable
 " Disable bell and visual bell.
 set noerrorbells visualbell t_vb=
 
+" Set default autocompletion behavior.
+set completeopt+=noinsert
+
 " Hide some autocompletion messages.
 set shortmess+=c
 
