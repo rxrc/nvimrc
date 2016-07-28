@@ -1,1 +1,2 @@
-let g:deoplete#keyword_patterns.clojure = '[\w!$%&*+/:<=>?@\^_~\-\.]*'
+let g:deoplete#keyword_patterns.clojure =
+  \ '[\w!$%&*+/:<=>?@\^_~\-\.]*'
