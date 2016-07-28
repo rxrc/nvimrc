@@ -1,3 +1,8 @@
+" Add aliases for consistent behavior of ctrl-space.
+nmap <NUL> <C-Space>
+imap <NUL> <C-Space>
+cmap <NUL> <C-Space>
+
 " Map enter to escape in insert mode.
 inoremap <CR> <Esc>
 
