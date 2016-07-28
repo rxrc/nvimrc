@@ -1,6 +1,8 @@
-" Only enable emmet mappings in insert mode.
-let g:user_emmet_mode='i'
+" Only enable Emmet mappings in insert mode.
+let g:user_emmet_mode='iv'
 
-" Customize emmet keys.
-let g:user_emmet_leader_key = '<C-E>'
-let g:user_emmet_expandabbr_key = '<C-O>'
+" Set the Emmet leader.
+let g:user_emmet_leader_key = '<C-O>'
+
+" Customize Emmet mappings.
+imap <C-E> <Plug>(emmet-expand-abbr)
