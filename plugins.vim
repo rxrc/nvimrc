@@ -239,6 +239,10 @@ Plug 'danchoi/ri.vim',
 Plug 'fishbullet/deoplete-ruby',
      \ { 'for': 'ruby' }
 
+" TypeScript
+Plug 'mhartington/deoplete-typescript',
+     \ { 'for': 'typescript' }
+
 " Web
 Plug 'othree/csscomplete.vim',
      \ { 'for': language_groups['web'] }
