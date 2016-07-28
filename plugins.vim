@@ -164,13 +164,14 @@ Plug 'junegunn/fzf.vim'
 " Language Interfaces
 "
 
+" Language Groups
+let b:language_groups = {
+  \ 'web': ['css', 'html', 'html.handlebars',
+  \         'javascript.jsx', 'liquid', 'sass', 'scss']
+  \ }
+
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
-
-" Emmet
-Plug 'mattn/emmet-vim',
-     \ { 'for': ['css', 'html', 'html.handlebars',
-     \           'javascript.jsx', 'liquid', 'sass', 'scss'] }
 
 " Clojure
 Plug 'tpope/vim-fireplace',
@@ -222,6 +223,10 @@ Plug 'tpope/vim-bundler',
 
 Plug 'danchoi/ri.vim',
      \ { 'for': 'ruby' }
+
+" Web
+Plug 'mattn/emmet-vim',
+     \ { 'for': b:language_groups['web'] }
 
 "
 " vim-airline
