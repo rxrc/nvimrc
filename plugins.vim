@@ -225,6 +225,9 @@ Plug 'danchoi/ri.vim',
      \ { 'for': 'ruby' }
 
 " Web
+Plug 'othree/csscomplete.vim',
+     \ { 'for': b:language_groups['web'] }
+
 Plug 'mattn/emmet-vim',
      \ { 'for': b:language_groups['web'] }
 
