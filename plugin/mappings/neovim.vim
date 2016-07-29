@@ -148,10 +148,6 @@ nnoremap <Leader>= :<C-U>put =
 " Use <C-G> for M.
 nnoremap <C-G> M
 
-" Add shortcuts to moves lines up and down.
-nnoremap <silent> <C-=> :<C-U>m .+1<CR>==
-nnoremap <silent> <C--> :<C-U>m .-2<CR>==
-
 " Adds mappings for the system clipboard.
 function! SystemClipboardMappings(register, quiet)
   " Copy to system clipboard.

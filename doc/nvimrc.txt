@@ -174,7 +174,7 @@ Shortcuts for common functions
       move the cursor, scroll through history, and navigate popups.
       They serve as general alternatives to the arrow keys when possible.
       [Vim Tmux Navigator] implements split navigation.
-    - <C-> and <C-=> moves lines up and down.
+    - <C--> and <C-=> moves lines up and down with [unimpaired].
     - Double tap <Leader> to toggle folds.
     - Use <Tab><Tab> to record to `@q` and <C-Q> to playback `@q`.
     - <Leader>x is an easier to input shortcut for gx.
@@ -313,10 +313,6 @@ U                       Mapped to <C-R> (redo).
                                                         *<C-R>*
 <C-R>                   Mapped to U.
 
-                                                        *<C-->* *<C-+>*
-<C-->                   Move lines up and down (using `:m`).
-<C-=>
-
                                                         *<Leader>c*
                                                         *<Leader>C*
                                                         *<Leader>cc*
@@ -443,6 +439,10 @@ m{motion}                          M moves to the end of line.
 
                                                         *<C-O>*
 <C-O>                   [Emmet] In insert mode, Emmet leader key.
+
+                                                        *<C-->* *<C-+>*
+<C-->                   [unimpaired] Move lines up and down.
+<C-=>
 
                                                         *<Leader>a* *<Leader>b*
                                                         *<Leader>e* *<Leader>y*
