@@ -6,6 +6,9 @@ cmap <NUL> <C-Space>
 " Map enter to escape in insert mode.
 inoremap <CR> <Esc>
 
+" NOTE: Mappings for ctrl-j, ctrl-k, and ctrl-l
+"       are defined in autocompletion.vim.
+
 " Use ctrl-h to as backspace in insert mode.
 inoremap <C-H> <BS>
 

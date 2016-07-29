@@ -94,10 +94,11 @@ Mappings (not listed under |nvimrc-mappings|)
     - <C-Space> opens the Unite UltiSnips buffer from normal mode.
     - <C-Space> starts manual completion from insert mode.
     - <C-J> and <C-K> navigate the popup in either direction.
-    - <C-L> inserts and navigates snippets.
-    - <C-H> acts as backspace while the popup is open.
-    - <CR> closes the popup (keep completion).
+    - <C-L> closes the popup (keep completion).
     - <C-W> smart-closes the popup (cancel completion).
+    - <CR> closes the popup and exits insert mode (keep completion).
+    - <Tab> expands snippets and <C-J> and <C-K> navigate them
+      (default UltiSnips mappings).
 
 ------------------------------------------------------------------------------
 2.2 Unite settings                                      *nvimrc-settings-unite*
@@ -152,6 +153,8 @@ Critically different mappings
       <C-CR> leaves terminal insert mode.
     - Use <C-CR> or <S-CR> to insert a newline (split the line)
       in normal or insert mode.
+    - In insert mode, use <C-J> to split the line and <C-K> to unsplit it.
+    - In insert mode, <C-H> is <BS> and <BS> is <Left>, but <C-L> is <Right>.
     - Enter opens command-line mode from normal or visual mode.
     - <S-Esc> toggles the command-line window in normal or visual mode.
     - U is mapped to redo and <C-R> is mapped to the original U key.
@@ -171,7 +174,7 @@ Critically different mappings
 
 Shortcuts for common functions
     - <C-H>, <C-J>, <C-K>, and <C-L> move between splits,
-      move the cursor, scroll through history, and navigate popups.
+      move the cursor, scroll through history, and navigate popups and snippets.
       They serve as general alternatives to the arrow keys when possible.
       [Vim Tmux Navigator] implements split navigation.
     - <C--> and <C-=> moves lines up and down with [unimpaired].
@@ -267,6 +270,9 @@ U                       Mapped to <C-R> (redo).
                                                         *`*
 `                       Mapped to ' (` is swapped with ').
 
+                                                        *<BS>*
+<BS>                    Mapped to <Left> in insert mode.
+
                                                         *<CR>*
 <CR>                    Exit insert mode via <Esc>. In normal
                         or visual mode, open command-line mode.
@@ -294,18 +300,21 @@ U                       Mapped to <C-R> (redo).
 <C-G>                   Mapped to M.
 
                                                         *<C-H>*
-<C-H>                   In insert mode and command-line mode,
-                        move cursor one character right.
+<C-H>                   In command-line mode, move cursor one character left.
+                        In insert mode, mapped to <BS>.
 
                                                         *<C-J>*
 <C-J>                   In command-line mode, navigate history down.
+                        In insert mode, splits the line.
 
                                                         *<C-K>*
 <C-K>                   In command-line mode, navigate history up.
+                        In insert mode, unsplits the line.
 
                                                         *<C-L>*
 <C-L>                   In insert mode and command-line mode,
-                        move cursor one character right.
+                        move cursor one character right
+                        (or inserts completion from popup).
 
                                                         *<C-Q>*
 <C-Q>                   Mapped to @q.
