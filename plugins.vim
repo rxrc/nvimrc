@@ -165,7 +165,7 @@ Plug 'junegunn/fzf.vim'
 "
 
 " Language Groups
-let b:language_groups = {
+let language_groups = {
   \ 'web': ['css', 'html', 'html.handlebars',
   \         'javascript.jsx', 'liquid', 'sass', 'scss']
   \ }
@@ -226,10 +226,10 @@ Plug 'danchoi/ri.vim',
 
 " Web
 Plug 'othree/csscomplete.vim',
-     \ { 'for': b:language_groups['web'] }
+     \ { 'for': language_groups['web'] }
 
 Plug 'mattn/emmet-vim',
-     \ { 'for': b:language_groups['web'] }
+     \ { 'for': language_groups['web'] }
 
 "
 " vim-airline
