@@ -214,6 +214,7 @@ Plug 'zchee/deoplete-jedi',
      \ { 'for': 'python' }
      \ | Plug 'lambdalisue/vim-pyenv',
               \ { 'for': 'python' }
+
 " Ruby
 Plug 'tpope/vim-rbenv',
      \ { 'for': 'ruby' }
@@ -303,12 +304,15 @@ let g:commentary_map_backslash = 0
 " Enable deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" Initialize keyword_patterns.
+" Initialize deoplete globals.
 if !exists('g:deoplete#keyword_patterns')
   let g:deoplete#keyword_patterns = {}
 endif
 
-" Initialize omni_patterns.
+if !exists('g:deoplete#sources')
+  let g:deoplete#sources = {}
+endif
+
 if !exists('g:deoplete#omni_patterns')
   let g:deoplete#omni_patterns = {}
 endif
