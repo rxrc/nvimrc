@@ -225,6 +225,9 @@ Plug 'tpope/vim-bundler',
 Plug 'danchoi/ri.vim',
      \ { 'for': 'ruby' }
 
+Plug 'fishbullet/deoplete-ruby',
+     \ { 'for': 'ruby' }
+
 " Web
 Plug 'othree/csscomplete.vim',
      \ { 'for': language_groups['web'] }
