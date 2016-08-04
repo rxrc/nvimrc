@@ -48,12 +48,17 @@ and vim-airline is set to use [Powerline fonts].
   For fzf dictionary completion: `/usr/share/dict/words`.
 - [Jedi] for Python 2 and 3.
 - See [vim-fireplace] for the Clojure specific plugin dependences.
+- Supports [pyenv] if installed.
+- Supports [rbenv] if installed ([rbenv-bundler] recommended).
 
 [ack]: http://beyondgrep.com/
 [ag]: http://geoff.greer.fm/ag/
 [curl]: https://curl.haxx.se/
 [fzf]: https://github.com/junegunn/fzf
 [Jedi]: http://jedi.jedidjah.ch/
+[pyenv]: https://github.com/yyuu/pyenv
+[rbenv]: https://github.com/carsomyr/rbenv-bundler
+[rbenv-bundler]: https://github.com/carsomyr/rbenv-bundler
 [urxvt]: http://software.schmorp.de/pkg/rxvt-unicode.html
 [vim-fireplace]: https://github.com/tpope/vim-fireplace
 
