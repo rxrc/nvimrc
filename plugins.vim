@@ -352,6 +352,9 @@ let g:polyglot_disabled = [
 " Load jsx syntax for normal javascript files.
 let g:jsx_ext_required = 0
 
+" Enable syntax highlighting for Flow.
+let g:javascript_plugin_flow = 1
+
 "
 " Ruby
 
