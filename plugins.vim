@@ -205,6 +205,13 @@ Plug 'severeoverfl0w/async-clj-omni',
 Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
 
+" JavaScript
+Plug 'ternjs/tern_for_vim',
+     \ { 'for': 'javascript' }
+
+Plug 'carlitux/deoplete-ternjs',
+     \ { 'for': 'javascript' }
+
 " LaTeX
 Plug 'lervag/vimtex',
      \ { 'for': 'tex' }
