@@ -125,6 +125,9 @@ vnoremap <Leader>/ q/
 nnoremap <Leader>? q?
 vnoremap <Leader>? q?
 
+" Add shortcut to close preview window.
+nnoremap <silent> <Leader>xz :<C-U>pclose<CR>
+
 " Add shortcut to clear highlighting until next search.
 nnoremap <silent> <Leader>o :<C-U>nohlsearch<CR>
 

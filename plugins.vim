@@ -80,6 +80,9 @@ Plug 'moll/vim-bbye'
 " Internal Interfaces
 "
 
+" Lists
+Plug 'milkypostman/vim-togglelist'
+
 " Undo
 Plug 'mbbill/undotree'
 

@@ -210,6 +210,9 @@ Shortcuts for buffer manipulation
     - [Bbye]: close and force close buffers with <Leader>w and <Leader>W.
 
 Interfaces
+    - Close the preview window with <Leader>xz.
+    - [togglelist]: toggle the quickfix list with <Leader>xx
+      and the location list with <Leader>xl.
     - [neoterm] <Leader><BS> opens a terminal.
     - [test] Run tests with <Leader>R, <Leader>rr, <Leader>ra, and <Leader>rl.
       Visit last test with <Leader>rg.
@@ -371,6 +374,9 @@ U                       Mapped to <C-R> (redo).
                                                         *<Leader>S*
 <Leader>S               Synonym for `:write!`.
 
+                                                        *<Leader>xz*
+<Leader>xz              Synonym for `:pclose`.
+
                                                         *<Leader>,*
 <Leader>,               Mapped to gT.
 
@@ -500,6 +506,10 @@ m{motion}                          M moves to the end of line.
                                w is a synonym for `:Bdelete` and
                                W is a synonym for `:Bdelete!`.
 
+                                                        *<Leader>xx*
+                                                        *<Leader>xz*
+<Leader>x{xz}           [togglelist] Toggle the quickfi[x]
+                                     or [l]ocation list.
                                                         *<Leader>+*
 <Leader>+               [Autoformat] Synonym for `:Autoformat`.
 
