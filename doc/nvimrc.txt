@@ -213,8 +213,8 @@ Interfaces
     - Close the preview window with <Leader>xz.
     - [togglelist]: toggle the quickfix list with <Leader>xx
       and the location list with <Leader>xl.
-    - [neoterm] <Leader><BS> opens a terminal.
-    - [test] Run tests with <Leader>R, <Leader>rr, <Leader>ra, and <Leader>rl.
+    - [neoterm]: <Leader><BS> opens a terminal.
+    - [test]: run tests with <Leader>R, <Leader>rr, <Leader>ra, and <Leader>rl.
       Visit last test with <Leader>rg.
     - [Grepper]: <Leader>A will search with Grepper.
     - [Autoformat]: <Leader>+ will run `:Autoformat`.
