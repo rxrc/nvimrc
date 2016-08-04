@@ -87,9 +87,6 @@ vnoremap <C-Q> @q
 " Add shortcut to toggle folds.
 nnoremap <Leader><Leader> za
 
-" Add shortcut to open external links.
-nmap <Leader>x gx
-
 " Add shortcuts to navigate out of the terminal.
 tnoremap <C-CR> <C-\><C-N>
 augroup neovim-terminal-mappings

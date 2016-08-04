@@ -180,7 +180,6 @@ Shortcuts for common functions
     - <C--> and <C-=> moves lines up and down with [unimpaired].
     - Double tap <Leader> to toggle folds.
     - Use <Tab><Tab> to record to `@q` and <C-Q> to playback `@q`.
-    - <Leader>x is an easier to input shortcut for gx.
     - <Leader>o clears the highlighting until next search.
     - <Leader>= inserts from the expression register.
     - <Leader>p and <Leader>P paste from the system clipboard.
@@ -371,9 +370,6 @@ U                       Mapped to <C-R> (redo).
 
                                                         *<Leader>S*
 <Leader>S               Synonym for `:write!`.
-
-                                                        *<Leader>x*
-<Leader>x               Mapped to gx.
 
                                                         *<Leader>,*
 <Leader>,               Mapped to gT.
