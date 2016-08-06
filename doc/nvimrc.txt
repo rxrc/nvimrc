@@ -96,7 +96,7 @@ Mappings (not listed under |nvimrc-mappings|)
     - <C-J> and <C-K> navigate the popup in either direction.
     - <C-L> closes the popup (keep completion).
     - <C-W> smart-closes the popup (cancel completion).
-    - <CR> closes the popup and exits insert mode (keep completion).
+    - <CR> closes the popup and exits insert mode (cancel completion).
     - <Tab> expands snippets and <C-J> and <C-K> navigate them
       (default UltiSnips mappings).
 
@@ -152,7 +152,7 @@ Critically different mappings
     - Enter (or <Esc>) leaves insert mode.
       <C-CR> leaves terminal insert mode.
     - Use <C-CR> or <S-CR> to insert a newline (split the line)
-      in normal or insert mode.
+      in normal or insert mode. Always ends in insert mode.
     - In insert mode, use <C-J> to split the line and <C-K> to unsplit it.
     - In insert mode, <C-H> is <BS> and <BS> is <Left>, but <C-L> is <Right>.
     - Enter opens command-line mode from normal or visual mode.
@@ -232,6 +232,7 @@ Interfaces
 
 Toggles
     - coa toggles [Rainbow Parentheses].
+    - coe toggles [lexima] on the current buffer.
     - cof toggles [EasyClip] paste formatting.
     - com toggles the colorcolumn display.
     - cop toggles the <Leader>p, <Leader>P, and <Leader>c
@@ -418,6 +419,9 @@ by the [Plugin Name] in square brackets.
 
                                                         *coa*
 coa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
+
+                                                        *coe*
+coe                     [lexima] Toggle lexima on current buffer.
 
                                                         *cof*
 cof                     [EasyClip] Toggle paste formatting.

@@ -6,18 +6,24 @@ cmap <NUL> <C-Space>
 " Map enter to escape in insert mode.
 inoremap <CR> <Esc>
 
-" NOTE: Mappings for ctrl-j, ctrl-k, and ctrl-l
-"       are defined in autocompletion.vim.
-
-" Use ctrl-h to as backspace in insert mode.
-inoremap <C-H> <BS>
-
 " Use backspace as left in insert mode.
 inoremap <BS> <Left>
 
-" Use ctrl-enter or shift-enter to split lines in normal mode.
-nmap <C-CR> i<C-CR><Esc>
-nmap <S-CR> i<C-CR><Esc>
+" Use ctrl-h to as backspace in insert mode.
+" NOTE: This is redefined in lexima.vim.
+" inoremap <C-H> <BS>
+
+" Use ctrl-k as split line in insert mode.
+" NOTE: This is redefined in autocompletion.vim.
+" inoremap <C-K> <CR><Up><C-O>$
+
+" Use ctrl-l as Right in insert mode.
+" NOTE: This is redefined in autocompletion.vim.
+" inoremap <C-L> <Right>
+
+" Use ctrl-enter or shift-enter to split line and insert in normal mode.
+nmap <C-CR> i<C-CR>
+nmap <S-CR> i<C-CR>
 
 " Use enter to open command-line mode.
 nnoremap <CR> :

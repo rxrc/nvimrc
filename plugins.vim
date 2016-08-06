@@ -47,6 +47,7 @@ Plug 'jnurmine/zenburn'
 "
 
 " Syntax
+Plug 'cohama/lexima.vim'
 Plug 'alvan/vim-closetag'
 Plug 'chrisbra/colorizer'
 Plug 'luochen1990/rainbow'
