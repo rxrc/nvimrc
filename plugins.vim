@@ -326,6 +326,9 @@ let g:commentary_map_backslash = 0
 " Enable deoplete.
 let g:deoplete#enable_at_startup = 1
 
+" Complete file paths relative to the current buffer.
+let g:deoplete#file#enable_buffer_path = 1
+
 " Initialize deoplete globals.
 if !exists('g:deoplete#keyword_patterns')
   let g:deoplete#keyword_patterns = {}
