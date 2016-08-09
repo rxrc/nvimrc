@@ -1,3 +1,6 @@
+" Use atomic updates.
+set backupcopy=yes
+
 " Enable persistent undo history.
 set undofile
 
