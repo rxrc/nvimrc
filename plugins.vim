@@ -106,6 +106,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'shougo/deoplete.nvim',
      \ { 'do': function('DoRemote') }
+Plug 'shougo/neoinclude.vim'
 Plug 'sirver/ultisnips'
 Plug 'rxrc/vim-snippets',
      \ { 'branch': 'rxrc' }
