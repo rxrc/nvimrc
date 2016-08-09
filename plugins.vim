@@ -211,6 +211,9 @@ Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
 
 " JavaScript
+Plug 'isruslan/vim-es6',
+     \ { 'for': 'javascript' }
+
 Plug 'ternjs/tern_for_vim',
      \ { 'for': 'javascript' }
 
