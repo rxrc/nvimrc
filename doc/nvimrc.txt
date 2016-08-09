@@ -226,8 +226,8 @@ Interfaces
     - [vimfiler]: open and focus with <Leader>i and toggle with <Leader>I.
     - [Tagbar]: open and focus with <Leader>t and toggle with <Leader>T.
     - [undotree]: open and focus with <Leader>u and toggle with <Leader>U.
-    - For some file types, d and D will provide an interface to
-      documentation lookup.
+    - For some file types, <Leader>d and <Leader>D
+      will provide an interface to documentation lookup.
       Mapped for [fireplace], and [ri].
 
 Toggles
@@ -473,6 +473,9 @@ m{motion}                          M moves to the end of line.
                         [ri] Prompt to search for documentation:
                              result window split horizontally (d)
                              or vertically (D).
+
+                        [tern] Prompt to lookup documentation with
+                               `:TernDoc` or `:TernDocBrowse`.
 
 
                                                         *<Leader>A*
