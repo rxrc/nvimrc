@@ -206,9 +206,6 @@ Plug 'severeoverfl0w/async-clj-omni',
 Plug 'flowtype/vim-flow',
      \ { 'for': 'javascript' }
 
-Plug 'steelsojka/deoplete-flow',
-     \ { 'for': 'javascript' }
-
 " Haskell
 Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
