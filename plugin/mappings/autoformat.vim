@@ -1,3 +1,3 @@
 " Add shortcuts for Autoformat.
-nnoremap <Leader>+ :Autoformat<CR>
+nnoremap <Leader>+ :<C-U>Autoformat<CR>
 vnoremap <Leader>+ :Autoformat<CR>
