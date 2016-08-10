@@ -48,6 +48,7 @@ and vim-airline is set to use [Powerline fonts].
   For fzf dictionary completion: `/usr/share/dict/words`.
 - See [vim-fireplace] for the Clojure specific plugin dependences.
 - Supports local [Node.js] binaries installed with [npm].
+- Supports [nvm] if installed.
 - Supports [pyenv] if installed.
 - Supports [rbenv] if installed ([rbenv-bundler] recommended).
 
@@ -57,6 +58,7 @@ and vim-airline is set to use [Powerline fonts].
 [fzf]: https://github.com/junegunn/fzf
 [Node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
+[nvm]: https://github.com/creationix/nvm/
 [pyenv]: https://github.com/yyuu/pyenv
 [rbenv]: https://github.com/carsomyr/rbenv-bundler
 [rbenv-bundler]: https://github.com/carsomyr/rbenv-bundler
