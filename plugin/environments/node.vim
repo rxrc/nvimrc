@@ -36,7 +36,6 @@ endfunction
 " Update binary paths on entering buffer.
 augroup node-local-bin
   autocmd!
-  autocmd BufEnter * if isdirectory(s:nvm_root)
-    \ | call s:node_add_bins() | else
-    \ | call s:node_add_local_bins() | endif
+  autocmd BufEnter * call s:node_add_local_bins()
+  autocmd BufEnter * call s:node_add_bins()
 augroup END
