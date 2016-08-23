@@ -18,12 +18,14 @@ function! s:node_add_local_bins()
 endfunction
 
 " All nvm managed binaries to path.
+let g:env_node_bin = ''
 function! s:node_add_bin_handler(job_id, data, event)
   if a:data[0] =~# '^' . s:nvm_root . '/versions/node/.*/bin/node$'
     let l:bin_path = substitute(a:data[0], '/node$', '', '')
     let $PATH = substitute($PATH, ':' . l:bin_path, '', '')
     let $PATH = l:bin_path . ':' . $PATH
     call s:node_add_local_bins()
+    let g:env_node_bin = l:bin_path . '/'
   endif
 endfunction
 
