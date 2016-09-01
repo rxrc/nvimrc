@@ -18,3 +18,8 @@ if empty($VIM_COLOR)
 elseif $VIM_COLOR =~# "^base16-"
   let g:airline_theme = substitute($VIM_COLOR, '-', '_', '')
 endif
+
+" Add hook for plugins which need to load after GUI.
+function! InitTheme()
+endfunction
+call InitTheme()

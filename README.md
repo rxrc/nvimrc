@@ -26,8 +26,6 @@ see `:help nvimrc` or view [nvimrc.txt](./doc/nvimrc.txt) directly.
 ### GUI
 
 A GUI is optional, but this config is also tested with [neovim-qt].
-For proper vim-airline GUI support, you must set
-`NVIM_TUI_ENABLE_TRUE_COLOR=1` only when running the GUI.
 
 [neovim-qt]: https://github.com/equalsraf/neovim-qt
 

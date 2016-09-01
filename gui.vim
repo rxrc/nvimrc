@@ -18,3 +18,11 @@ let g:zenburn_high_Contrast = 1
 let g:airline_theme = 'zenburn'
 set background=dark
 colorscheme zenburn
+
+" Disable promptline and tmuxline extensions.
+let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#promptline#enabled = 0
+
+" Un-set promptline and tmuxline snapshot.
+unlet g:airline#extensions#promptline#snapshot_file
+unlet g:airline#extensions#tmuxline#snapshot_file
