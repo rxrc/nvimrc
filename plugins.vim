@@ -33,10 +33,8 @@ Plug 'editorconfig/editorconfig-vim'
 " Prompt and Statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/promptline.vim',
-     \ { 'on': 'InitTheme' }
-Plug 'edkolev/tmuxline.vim',
-     \ { 'on': 'InitTheme' }
+Plug 'edkolev/promptline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 " Themes and Colors
 Plug 'chriskempson/base16-vim'
@@ -271,10 +269,6 @@ let g:airline_powerline_fonts = 1
 
 " Enable tabline.
 let g:airline#extensions#tabline#enabled = 1
-
-" Set promptline and tmuxline snapshot.
-let g:airline#extensions#promptline#snapshot_file = $HOME . '/.promptline.sh'
-let g:airline#extensions#tmuxline#snapshot_file = $HOME . '/.tmuxline.conf'
 
 "
 " closetag.vim
