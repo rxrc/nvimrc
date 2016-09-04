@@ -11,7 +11,9 @@ set mousefocus
 set mousemodel=extend
 
 " Set font.
-GuiFont Inconsolata-g for Powerline:h12
+if exists('GuiFont')
+  GuiFont Inconsolata-g for Powerline:h12
+endif
 
 " Set color scheme and vim-airline theme dynamically.
 let g:zenburn_high_Contrast = 1
