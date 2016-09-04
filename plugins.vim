@@ -17,7 +17,7 @@ endif
 if empty($VIM_PYTHON3)
   let g:python3_host_prog = '/bin/python3'
 else
-  let g:python_host_prog = $VIM_PYTHON3
+  let g:python3_host_prog = $VIM_PYTHON3
 endif
 
 " Libraries
