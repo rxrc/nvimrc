@@ -19,3 +19,8 @@ set undodir=$XDG_CACHE_HOME/nvim/undo
 
 " Set vim-session path (created above).
 let g:session_directory = $XDG_CACHE_HOME . '/nvim/session'
+
+" Load ginit for neovim-dot-app.
+if exists('neovim_dot_app')
+  source $XDG_CONFIG_HOME/nvim/ginit.vim
+endif
