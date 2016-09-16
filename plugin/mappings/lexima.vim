@@ -5,9 +5,12 @@ nnoremap <silent><expr> coe
   \ ":<C-U>let b:lexima_disabled = 1<CR>:echo 'Disabled lexima on buffer'<CR>"
 
 " Fix newline mappings to work with lexima.
-call lexima#insmode#define_altanative_key('<C-CR>', '<CR>')
-call lexima#insmode#define_altanative_key('<S-CR>', '<CR>')
-call lexima#insmode#define_altanative_key('<C-J>', '<CR>')
+try
+  call lexima#insmode#define_altanative_key('<C-CR>', '<CR>')
+  call lexima#insmode#define_altanative_key('<S-CR>', '<CR>')
+  call lexima#insmode#define_altanative_key('<C-J>', '<CR>')
+catch /^Vim\%((\a\+)\)\=:E117/
+endtry
 
 " Use ctrl-h as backspace.
 imap <expr> <C-H> lexima#expand('<LT>BS>', 'i')
