@@ -36,6 +36,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
 Plug 'edkolev/tmuxline.vim'
 
+" Disable promptline and tmuxline extensions.
+let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#promptline#enabled = 0
+
 " Themes and Colors
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
