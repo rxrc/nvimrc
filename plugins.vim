@@ -182,6 +182,10 @@ let language_groups = {
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
 
+" API Blueprint
+Plug 'kylef/apiblueprint.vim',
+     \ { 'for': 'apiblueprint' }
+
 " Clojure
 Plug 'tpope/vim-fireplace',
      \ { 'for': 'clojure' }
