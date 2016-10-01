@@ -4,6 +4,20 @@ augroup neomake-run
   autocmd BufWritePost * Neomake
 augroup END
 
+function! s:local_css_makers()
+  let l:makers = []
+
+  if executable('csslint') && !executable('stylelint')
+    call add(l:makers, 'csslint')
+  endif
+
+  if executable('stylelint')
+    call add(l:makers, 'stylelint')
+  endif
+
+  return l:makers
+endfunction
+
 function! s:local_javascript_makers()
   let l:makers = []
 
@@ -29,6 +43,8 @@ endfunction
 " Set enabled node makers.
 augroup neomake-makers-node
   autocmd!
+  autocmd FileType css
+    \ let b:neomake_css_enabled_makers = s:local_css_makers()
   autocmd FileType javascript
     \ let b:neomake_javascript_enabled_makers = s:local_javascript_makers()
   autocmd FileType javascript.jsx
