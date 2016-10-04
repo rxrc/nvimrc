@@ -175,7 +175,7 @@ Plug 'junegunn/fzf.vim'
 
 " Language Groups
 let language_groups = {
-  \ 'web': ['css', 'html', 'html.handlebars',
+  \ 'web': ['css', 'html', 'html.handlebars', 'tag',
   \         'javascript.jsx', 'liquid', 'sass', 'scss']
   \ }
 
@@ -241,6 +241,9 @@ Plug 'zchee/deoplete-jedi',
      \ { 'for': 'python' }
      \ | Plug 'lambdalisue/vim-pyenv',
               \ { 'for': 'python' }
+" Riot
+Plug 'ryym/vim-riot',
+     \ { 'for': 'riot' }
 
 " Ruby
 Plug 'tpope/vim-rbenv',
