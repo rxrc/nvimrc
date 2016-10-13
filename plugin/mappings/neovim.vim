@@ -182,6 +182,7 @@ function! SystemClipboardMappings(register, quiet)
   exec 'nnoremap <Leader>P "' . a:register . 'P'
 
   " Substitute from the system clipboard with easyclip.
+  exec 'vmap <C-;> "' . a:register . ':'
   exec 'nmap <C-;> "' . a:register . ':'
   exec 'nmap <C-;><C-;> "' . a:register . '::'
 
