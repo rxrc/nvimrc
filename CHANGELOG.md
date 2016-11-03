@@ -5,6 +5,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log follows the conventions of
 [keep a CHANGELOG](http://keepachangelog.com/).
 
-## [Unreleased]
+## 1.0.0 / 2016-11-02
 
-[Unreleased]: https://github.com/rxrc/nvimrc/compare/v0.0.1...HEAD
+- Initial release.

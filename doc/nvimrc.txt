@@ -1,5 +1,5 @@
 *nvimrc.txt* Neovim configuration as a self-bootstrapping plugin.
-*nvimrc*     0.0.1
+*nvimrc*     1.0.0
 
                                   _                    ~
                        _ ____   _(_)_ __ ___  _ __ ___ ~
