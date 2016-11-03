@@ -195,6 +195,8 @@ This software can be used freely, see [The Unlicense].
 The copyright text appearing below and elsewhere in this repository
 is for demonstration purposes only and does not apply to this software.
 
+## License
+
 This Neovim config is licensed under the MIT license.
 
 ## Warranty
