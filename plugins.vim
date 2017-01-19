@@ -152,9 +152,6 @@ Plug 'ron89/thesaurus_query.vim'
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
-" Portkey
-Plug 'dsawardekar/portkey'
-
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
