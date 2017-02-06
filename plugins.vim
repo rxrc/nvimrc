@@ -142,6 +142,7 @@ Plug 'eiginn/netrw'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'jaxbot/github-issues.vim'
 
 " Documentation
 Plug 'keith/investigate.vim'
@@ -341,6 +342,16 @@ endif
 
 if !exists('g:deoplete#omni_patterns')
   let g:deoplete#omni_patterns = {}
+endif
+
+"
+" github-issues
+
+" Load GitHub personal access token
+let g:github_access_token_file =
+  \ $XDG_CONFIG_HOME . '/github/tokens/github-issues.vim'
+if filereadable(g:github_access_token_file)
+  let g:github_access_token = readfile(g:github_access_token_file)[0]
 endif
 
 "
