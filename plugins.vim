@@ -163,10 +163,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 "
-" Initialization Settings
-"
-
-"
 " Language Interfaces
 "
 
@@ -265,6 +261,10 @@ Plug 'othree/csscomplete.vim',
 
 Plug 'mattn/emmet-vim',
      \ { 'for': language_groups['web'] }
+
+"
+" Initialization Settings
+"
 
 "
 " vim-airline
