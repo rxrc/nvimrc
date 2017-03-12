@@ -354,6 +354,10 @@ if filereadable(g:github_access_token_file)
   let g:github_access_token = readfile(g:github_access_token_file)[0]
 endif
 
+" Load GitHub issues asynchronously.
+let g:gissues_lazy_load = 1
+let g:gissues_async_omni = 1
+
 "
 " fzf
 
