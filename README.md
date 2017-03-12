@@ -37,6 +37,14 @@ and vim-airline is set to use [Powerline fonts].
 [Inconsolata-g]: https://github.com/powerline/fonts/tree/master/Inconsolata-g
 [Powerline fonts]: https://github.com/powerline/fonts
 
+### GitHub Issues
+
+To use GitHub issues integration with private repositories,
+create `~/.config/github/tokens/github-issues.vim`
+containing a [GitHub personal access token].
+
+[GitHub personal access token]: https://github.com/settings/tokens
+
 ### Packages
 
 - [curl] for downloading unicode data.
