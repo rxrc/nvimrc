@@ -253,7 +253,7 @@ Plug 'fishbullet/deoplete-ruby',
      \ { 'for': 'ruby' }
 
 " TypeScript
-Plug 'mhartington/deoplete-typescript',
+Plug 'mhartington/nvim-typescript',
      \ { 'for': 'typescript' }
 
 " Web
