@@ -126,8 +126,8 @@ Plug 'shougo/vimproc.vim',
 " External Interfaces
 "
 
-" Neomake
-Plug 'neomake/neomake'
+" ALE
+Plug 'w0rp/ale'
 
 " Terminal
 Plug 'kassio/neoterm'
@@ -278,6 +278,9 @@ let g:airline_powerline_fonts = 1
 
 " Enable tabline.
 let g:airline#extensions#tabline#enabled = 1
+
+" Enable ALE.
+let g:airline#extensions#ale#enabled = 1
 
 "
 " closetag.vim
