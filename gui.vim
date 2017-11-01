@@ -17,6 +17,6 @@ endif
 
 " Set color scheme and vim-airline theme dynamically.
 let g:zenburn_high_Contrast = 1
-let g:airline_theme = 'zenburn'
+let g:airline_theme = 'one'
 set background=dark
-colorscheme zenburn
+colorscheme one

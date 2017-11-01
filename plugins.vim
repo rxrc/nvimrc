@@ -45,6 +45,9 @@ Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
 Plug 'jnurmine/zenburn'
+Plug 'rakr/vim-one'
+Plug 'joshdick/onedark.vim'
+Plug 'mhartington/oceanic-next'
 
 "
 " Editor
