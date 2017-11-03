@@ -371,8 +371,15 @@ let g:gissues_async_omni = 1
 let g:fzf_command_prefix = 'Fzf'
 
 " Set default fzf command.
-if executable('fzf') && executable('ag')
-  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+if executable('fzf')
+  if executable('ag')
+    let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+  endif
+
+  if executable('rg')
+    let FZF_DEFAULT_COMMAND =
+      \ 'rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+  endif
 endif
 
 "
