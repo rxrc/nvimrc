@@ -317,6 +317,10 @@ let g:colorizer_auto_filetype = join([
 let g:rainbow_active = 1
 
 "
+" Sneak
+let g:sneak#label = 1
+
+"
 " vim-signature
 
 " Set signature leader.
