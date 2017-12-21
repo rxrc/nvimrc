@@ -355,9 +355,15 @@ if !exists('g:deoplete#omni_patterns')
 endif
 
 "
+" GitGutter
+
+" Always open the sign column.
+let g:gitgutter_sign_column_always = 1
+
+"
 " github-issues
 
-" Load GitHub personal access token
+" Load GitHub personal access token.
 let g:github_access_token_file =
   \ $XDG_CONFIG_HOME . '/github/tokens/github-issues.vim'
 if filereadable(g:github_access_token_file)
