@@ -357,9 +357,6 @@ endif
 "
 " GitGutter
 
-" Always open the sign column.
-let g:gitgutter_sign_column_always = 1
-
 "
 " github-issues
 

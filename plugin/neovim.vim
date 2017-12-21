@@ -13,6 +13,9 @@ set splitbelow
 " Show line numbers.
 set number
 
+" Always show the sign column.
+set signcolumn=yes
+
 " Set nonzero scrolloff.
 set scrolloff=3
 
