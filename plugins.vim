@@ -212,6 +212,9 @@ Plug 'severeoverfl0w/async-clj-omni',
 Plug 'flowtype/vim-flow',
      \ { 'for': 'javascript' }
 
+" GraphQL
+Plug 'jparise/vim-graphql'
+
 " Haskell
 Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
