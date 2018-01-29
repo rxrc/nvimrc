@@ -20,3 +20,9 @@ let g:zenburn_high_Contrast = 1
 let g:airline_theme = 'one'
 set background=dark
 colorscheme one
+
+" Set nvim-gtk settings.
+if exists('g:GtkGuiLoaded')
+  call rpcnotify(1, 'Gui', 'Font', 'Inconsolata-g for Powerline 14')
+  call rpcnotify(1, 'Gui', 'Option', 'Tabline', 0)
+endif
