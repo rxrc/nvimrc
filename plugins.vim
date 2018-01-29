@@ -360,7 +360,7 @@ endif
 "
 " github-issues
 
-" Load GitHub personal access token.
+" Load GitHub personal access token
 let g:github_access_token_file =
   \ $XDG_CONFIG_HOME . '/github/tokens/github-issues.vim'
 if filereadable(g:github_access_token_file)
