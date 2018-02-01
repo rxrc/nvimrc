@@ -383,12 +383,12 @@ let g:fzf_command_prefix = 'Fzf'
 " Set default fzf command.
 if executable('fzf')
   if executable('ag')
-    let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+    let $FZF_DEFAULT_COMMAND = 'ag --hidden --path-to-ignore ' . $XDG_CONFIG_HOME . '/ignore -g ""'
   endif
 
   if executable('rg')
-    let FZF_DEFAULT_COMMAND =
-      \ 'rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+    let $FZF_DEFAULT_COMMAND =
+      \ 'rg --files --smart-case --hidden --follow --ignore-file ' . $XDG_CONFIG_HOME . '/ignore'
   endif
 endif
 
