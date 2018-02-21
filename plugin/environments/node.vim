@@ -1,8 +1,8 @@
 " Set nvm root.
-if empty($NVM_ROOT)
+if empty($NVM_DIR)
   let s:nvm_root = $HOME . '/.nvm'
 else
-  let s:nvm_root = $NVM_ROOT
+  let s:nvm_root = $NVM_DIR
 endif
 
 " Add local node module binaries to path.
