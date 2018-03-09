@@ -382,13 +382,19 @@ let g:fzf_command_prefix = 'Fzf'
 
 " Set default fzf command.
 if executable('fzf')
+  if empty($IGNORE_FILE)
+    let s:ignore_file = $HOME. '/.ignore'
+  else
+    let s:ignore_file = $IGNORE_FILE
+  endif
+
   if executable('ag')
-    let $FZF_DEFAULT_COMMAND = 'ag --hidden --path-to-ignore ' . $XDG_CONFIG_HOME . '/ignore -g ""'
+    let $FZF_DEFAULT_COMMAND = 'ag --hidden --path-to-ignore ' . s:ignore_file . ' -g ""'
   endif
 
   if executable('rg')
     let $FZF_DEFAULT_COMMAND =
-      \ 'rg --files --smart-case --hidden --follow --ignore-file ' . $XDG_CONFIG_HOME . '/ignore'
+      \ 'rg --files --smart-case --hidden --follow --ignore-file ' . s:ignore_file
   endif
 endif
 
