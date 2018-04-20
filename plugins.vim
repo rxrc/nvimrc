@@ -336,6 +336,12 @@ let g:SignatureMap = { 'Leader': "\<Leader\>;" }
 let g:commentary_map_backslash = 0
 
 "
+" vim-better-whitespace
+let g:better_whitespace_enabled = 1
+let g:strip_whitespace_on_save = 1
+let g:better_whitespace_operator = ''
+
+"
 " deoplete
 
 " Enable deoplete.
