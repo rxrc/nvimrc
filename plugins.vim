@@ -172,8 +172,9 @@ Plug 'junegunn/fzf.vim'
 
 " Language Groups
 let language_groups = {
+  \ 'javascript': ['javascript', 'javascript.jsx'],
   \ 'web': ['css', 'html', 'html.handlebars', 'tag',
-  \         'javascript.jsx', 'liquid', 'sass', 'scss']
+  \         'javascript', 'javascript.jsx', 'liquid', 'sass', 'scss']
   \ }
 
 " Vim-polyglot
@@ -210,7 +211,7 @@ Plug 'severeoverfl0w/async-clj-omni',
 
 " Flow
 Plug 'flowtype/vim-flow',
-     \ { 'for': 'javascript' }
+     \ { 'for': language_groups['javascript'] }
 
 " GraphQL
 Plug 'jparise/vim-graphql'
@@ -221,13 +222,13 @@ Plug 'bitc/vim-hdevtools',
 
 " JavaScript
 Plug 'isruslan/vim-es6',
-     \ { 'for': 'javascript' }
+     \ { 'for': language_groups['javascript'] }
 
 Plug 'ternjs/tern_for_vim',
-     \ { 'for': 'javascript' }
+     \ { 'for': language_groups['javascript'] }
 
 Plug 'carlitux/deoplete-ternjs',
-     \ { 'for': 'javascript' }
+     \ { 'for': language_groups['javascript'] }
 
 " LaTeX
 Plug 'lervag/vimtex',
