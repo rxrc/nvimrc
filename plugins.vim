@@ -108,11 +108,8 @@ Plug 'chrisbra/unicode.vim',
      \ { 'do': join(['curl --create-dirs -o', unicode_dest, unicode_src], ' ')}
 
 " Autocompletion
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
 Plug 'shougo/deoplete.nvim',
-     \ { 'do': function('DoRemote') }
+     \ { 'do': ':UpdateRemotePlugins', 'commit': '34ca8838dfd9600b0a777ecaafafb1e61c8f385b' }
 Plug 'shougo/neoinclude.vim'
 Plug 'sirver/ultisnips'
 Plug 'rxrc/vim-snippets',
