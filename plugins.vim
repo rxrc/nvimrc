@@ -109,7 +109,7 @@ Plug 'chrisbra/unicode.vim',
 
 " Autocompletion
 Plug 'shougo/deoplete.nvim',
-     \ { 'do': ':UpdateRemotePlugins', 'commit': '34ca8838dfd9600b0a777ecaafafb1e61c8f385b' }
+     \ { 'do': ':UpdateRemotePlugins' }
 Plug 'shougo/neoinclude.vim'
 Plug 'sirver/ultisnips'
 Plug 'rxrc/vim-snippets',
