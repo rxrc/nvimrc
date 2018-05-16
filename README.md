@@ -48,7 +48,7 @@ containing a [GitHub personal access token].
 ### Packages
 
 - [curl] for downloading unicode data.
-- [The Silver Searcher (aka Ag)][ag], or [ack], or grep.
+- [ripgrep] or [The Silver Searcher (aka Ag)][ag], or [ack], or grep.
 - The [fzf] binary (vim-plug is not configured to manage it here).
   Additionally, [urxvt] is configured as the fzf launcher for the GUI.
   For fzf dictionary completion: `/usr/share/dict/words`.
@@ -68,6 +68,7 @@ containing a [GitHub personal access token].
 [pyenv]: https://github.com/yyuu/pyenv
 [rbenv]: https://github.com/carsomyr/rbenv-bundler
 [rbenv-bundler]: https://github.com/carsomyr/rbenv-bundler
+[ripgrep]: https://github.com/BurntSushi/ripgrep
 [urxvt]: http://software.schmorp.de/pkg/rxvt-unicode.html
 [vim-fireplace]: https://github.com/tpope/vim-fireplace
 
