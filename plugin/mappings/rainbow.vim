@@ -1,2 +1,2 @@
 " Toggle rainbow parentheses
-nnoremap coa :<C-U>RainbowToggle<CR>
+nnoremap yoa :<C-U>RainbowToggle<CR>

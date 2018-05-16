@@ -198,13 +198,13 @@ endfunction
 call SystemClipboardMappings('+', 1)
 
 " Toggle system clipboard mappings between the + and * registers.
-nnoremap <silent><expr> cop
+nnoremap <silent><expr> yoP
   \ g:mapped_system_clipboard == '+' ?
   \ ":<C-U>call SystemClipboardMappings('*', 0)<CR>" :
   \ ":<C-U>call SystemClipboardMappings('+', 0)<CR>"
 
 " Toggle colored column.
-nnoremap <expr><silent> com
+nnoremap <expr><silent> yom
   \ &colorcolumn == '' ?
   \ ":<C-U> set colorcolumn=81<CR>" :
   \ ":<C-U> set colorcolumn=<CR>"

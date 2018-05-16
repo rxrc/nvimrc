@@ -231,14 +231,14 @@ Interfaces
       Mapped for [fireplace], and [ri].
 
 Toggles
-    - coa toggles [Rainbow Parentheses].
-    - coe toggles [lexima] on the current buffer.
-    - cof toggles [EasyClip] paste formatting.
-    - com toggles the colorcolumn display.
-    - cop toggles the <Leader>p, <Leader>P, and <Leader>c
+    - yoa toggles [Rainbow Parentheses].
+    - yoe toggles [lexima] on the current buffer.
+    - yof toggles [EasyClip] paste formatting.
+    - yom toggles the colorcolumn display.
+    - yoP toggles the <Leader>p, <Leader>P, and <Leader>c
       mappings between using the `+` (default) and `*` registers.
-    - coz toggles [Unicode] name or glyph completion.
-    - coU toggles mappings between using [fzf] and [Unite].
+    - yoz toggles [Unicode] name or glyph completion.
+    - yoU toggles mappings between using [fzf] and [Unite].
 
 ------------------------------------------------------------------------------
 3.1 Custom Neovim mappings                             *nvimrc-mappings-custom*
@@ -247,13 +247,13 @@ This section lists any standard Neovim mappings which this plugin remaps,
 and any new mappings to existing Neovim functions.
 All mappings are nonrecursive unless otherwise noted.
 
-                                                        *com*
-com                     Toggle system clipboard mappings between using
+                                                        *yom*
+yom                     Toggle system clipboard mappings between using
                         the + and * registers. See |<Leader>p|, |<Leader>P|,
                         and |<Leader>c|.
 
-                                                        *cop*
-cop                     Toggle display of colorcolumn.
+                                                        *yoP*
+yoP                     Toggle display of colorcolumn.
 
                                                         *q*
 q                       Mapped to the motion ge (recursive).
@@ -331,7 +331,7 @@ U                       Mapped to <C-R> (redo).
 <Leader>cc       or     Same as y, but use the system register +.
 <Leader>C        or     <Leader>cc yanks the current line.
 <Leader>c{motion}       <Leader>C yanks to the end of line.
-                        Can toggle between + and * registers using |cop|.
+                        Can toggle between + and * registers using |yoP|.
 
                                                         *<Leader>q*
                                                         *<Leader>E*
@@ -351,7 +351,7 @@ U                       Mapped to <C-R> (redo).
 <Leader>mm       or     Same as m, but move to the system register +.
 <Leader>M        or     <Leader>mm moves the current line.
 <Leader>m{motion}       <Leader>M moves to the end of line.
-                        Can toggle between + and * registers using |cop|.
+                        Can toggle between + and * registers using |yoP|.
 
                                                         *<Leader>n*
 <Leader>n               Synonym for `:enew`.
@@ -361,7 +361,7 @@ U                       Mapped to <C-R> (redo).
 
                                                         *<Leader>p* *<Leader>P*
 <Leader>{pP}            Same as p and P, but use the system register +.
-                        Can toggle between + and * registers using |cop|.
+                        Can toggle between + and * registers using |yoP|.
 
                                                         *<Leader>q*
 <Leader>q               Synonym for `:quitall`.
@@ -417,20 +417,20 @@ and modifications to a plugin's normal provided mappings.
 Each mapping's dependent plugin is prefixed
 by the [Plugin Name] in square brackets.
 
-                                                        *coa*
-coa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
+                                                        *yoa*
+yoa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
 
-                                                        *coe*
-coe                     [lexima] Toggle lexima on current buffer.
+                                                        *yoe*
+yoe                     [lexima] Toggle lexima on current buffer.
 
-                                                        *cof*
-cof                     [EasyClip] Toggle paste formatting.
+                                                        *yof*
+yof                     [EasyClip] Toggle paste formatting.
 
-                                                        *coz*
-coz                     [Unicode] Toggle unicode name or glyph completion.
+                                                        *yoz*
+yoz                     [Unicode] Toggle unicode name or glyph completion.
 
-                                                        *coU*
-coU                     [fzf] [Unite] Toggle between fzf and Unite.
+                                                        *yoU*
+yoU                     [fzf] [Unite] Toggle between fzf and Unite.
 
 
                                                         *m* *M* *mm*

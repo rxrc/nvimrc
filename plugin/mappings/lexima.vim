@@ -1,5 +1,5 @@
 " Toggle lexima.
-nnoremap <silent><expr> coe
+nnoremap <silent><expr> yoe
   \ exists('b:lexima_disabled') && b:lexima_disabled ?
   \ ":<C-U>let b:lexima_disabled = 0<CR>:echo 'Enabled lexima on buffer'<CR>" :
   \ ":<C-U>let b:lexima_disabled = 1<CR>:echo 'Disabled lexima on buffer'<CR>"

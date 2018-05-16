@@ -31,7 +31,7 @@ if executable('fzf')
   endfunction
 
   " Toggle between Unite and fzf mappings.
-  nnoremap <silent><expr> coU
+  nnoremap <silent><expr> yoU
     \ g:mapped_unite ?
     \ ":<C-U>call FzfMappings(0)<CR>" :
     \ ":<C-U>call UniteMappings(0)<CR>"
