@@ -256,6 +256,13 @@ Plug 'danchoi/ri.vim',
 Plug 'fishbullet/deoplete-ruby',
      \ { 'for': 'ruby' }
 
+" Terraform
+Plug 'hashivim/vim-terraform',
+     \ { 'for': 'terraform' }
+
+Plug 'juliosueiras/vim-terraform-completion',
+     \ { 'for': 'terraform' }
+
 " TypeScript
 Plug 'mhartington/nvim-typescript',
      \ { 'for': 'typescript' }
