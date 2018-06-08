@@ -142,7 +142,6 @@ Plug 'eiginn/netrw'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'jaxbot/github-issues.vim'
 
 " Documentation
 Plug 'keith/investigate.vim'
