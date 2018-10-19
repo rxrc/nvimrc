@@ -55,13 +55,13 @@ endfunction
 augroup ale-linters-node
   autocmd!
   autocmd FileType css
-    \ let b:ale_linters = {'css': s:local_css_makers()}
+    \ let b:ale_linters = s:local_css_makers()
   autocmd FileType javascript
-    \ let b:ale_linters = {'javascript': s:local_javascript_makers()}
+    \ let b:ale_linters = s:local_javascript_makers()
   autocmd FileType javascript.jsx
-    \ let b:ale_linters = {'javascript': s:local_javascript_makers()}
+    \ let b:ale_linters = s:local_javascript_makers()
   autocmd FileType javascript
-    \ let b:ale_fixers = {'javascript': s:local_javascript_makers()}
+    \ let b:ale_fixers = s:local_javascript_makers()
   autocmd FileType javascript.jsx
-    \ let b:ale_fixers = {'javascript': s:local_javascript_makers()}
+    \ let b:ale_fixers = s:local_javascript_makers()
 augroup END
