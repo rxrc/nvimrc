@@ -1,4 +1,4 @@
-function! ChangelogUrls(new_ver)
+function! ChangelogVersion(new_ver)
   let ver_date=system("date +%Y-%m-%d")
   normal! gg/## 0f Da [
   put =a:new_ver
