@@ -216,6 +216,8 @@ Plug 'jparise/vim-graphql'
 " Haskell
 Plug 'bitc/vim-hdevtools',
      \ { 'for': 'haskell' }
+Plug 'eagletmt/neco-ghc',
+     \ { 'for': 'haskell' }
 
 " JavaScript
 Plug 'isruslan/vim-es6',
@@ -422,6 +424,10 @@ let g:jsx_ext_required = 0
 
 " Enable syntax highlighting for Flow.
 let g:javascript_plugin_flow = 1
+
+"
+" Haskell
+let g:necoghc_use_stack = 1
 
 "
 " Ruby
