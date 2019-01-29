@@ -74,6 +74,7 @@ Plug 'bronson/vim-visual-star-search'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-abolish'
 
 " Whitespace
 Plug 'ntpeters/vim-better-whitespace'
