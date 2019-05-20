@@ -387,6 +387,9 @@ endif
 let g:gissues_lazy_load = 1
 let g:gissues_async_omni = 1
 
+" thesaurus_query.vim
+let g:tq_map_keys = 0
+
 "
 " fzf
 
