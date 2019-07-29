@@ -3,7 +3,7 @@ nnoremap <Leader>gg :<C-U>Git<Space>
 nnoremap <Leader>gk :<C-U>Gsplit<Space>
 nnoremap <Leader>gj :<C-U>Gvsplit<Space>
 nnoremap <Leader>ge :<C-U>Gedit<Space>
-nnoremap <silent> <Leader>gd :<C-U>Gdiff<CR>
+nnoremap <silent> <Leader>gd :<C-U>Gdiffsplit!<CR>
 nnoremap <silent> <Leader>gs :<C-U>Gstatus<CR>
 nnoremap <silent> <Leader>ga :<C-U>Gwrite<CR>
 nnoremap <silent> <Leader>gl :<C-U>Glog<CR>
