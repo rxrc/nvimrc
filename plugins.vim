@@ -265,10 +265,12 @@ Plug 'hashivim/vim-terraform',
 Plug 'juliosueiras/vim-terraform-completion',
      \ { 'for': 'terraform' }
 
-" TypeScript
-Plug 'mhartington/nvim-typescript',
+Plug 'quramy/tsuquyomi',
      \ { 'for': 'typescript' }
 
+Plug 'rudism/deoplete-tsuquyomi'
+
+"
 " Web
 Plug 'othree/csscomplete.vim',
      \ { 'for': language_groups['web'] }
