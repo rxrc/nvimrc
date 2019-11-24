@@ -23,12 +23,7 @@ function! s:local_javascript_makers()
     call add(l:linters, 'flow')
   endif
 
-  if executable('prettier-standard')
-    call add(l:linters, 'prettier_standard')
-    return l:linters
-  endif
-
-  if executable('standard')
+  if executable('standard') && !executable('tsc')
     call add(l:linters, 'standard')
     return l:linters
   endif
@@ -63,5 +58,13 @@ augroup ale-linters-node
   autocmd FileType javascript
     \ let b:ale_fixers = s:local_javascript_makers()
   autocmd FileType javascript.jsx
+    \ let b:ale_fixers = s:local_javascript_makers()
+  autocmd FileType typescript
+    \ let b:ale_linters = s:local_javascript_makers()
+  autocmd FileType typescriptreact
+    \ let b:ale_linters = s:local_javascript_makers()
+  autocmd FileType typescript
+    \ let b:ale_fixers = s:local_javascript_makers()
+  autocmd FileType typescriptreact
     \ let b:ale_fixers = s:local_javascript_makers()
 augroup END
