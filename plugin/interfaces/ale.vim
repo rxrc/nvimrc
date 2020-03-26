@@ -5,6 +5,12 @@ function! s:local_css_makers()
     call add(l:linters, 'csslint')
   endif
 
+  if executable('stylelint') && executable('prettier')
+    call add(l:linters, 'prettier')
+    call add(l:linters, 'stylelint')
+    return l:linters
+  endif
+
   if executable('stylelint')
     call add(l:linters, 'stylelint')
   endif
@@ -21,6 +27,12 @@ function! s:local_javascript_makers()
 
   if executable('flow') && filereadable(findfile('.flowconfig', '.;'))
     call add(l:linters, 'flow')
+  endif
+
+  if executable('standard') && executable('prettier')
+    call add(l:linters, 'prettier')
+    call add(l:linters, 'standard')
+    return l:linters
   endif
 
   if executable('standard') && !executable('tsc')
