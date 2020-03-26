@@ -217,7 +217,8 @@ Interfaces
     - [test]: run tests with <Leader>R, <Leader>rr, <Leader>ra, and <Leader>rl.
       Visit last test with <Leader>rg.
     - [Grepper]: <Leader>A will search with Grepper.
-    - [Autoformat]: <Leader>+ will run `:Autoformat`.
+    - [ALE]: In normal mode, <Leader>+ will run `:ALEFix`.
+    - [Autoformat]: In visual mode, <Leader>+ will run `:Autoformat`.
     - [fugitive] functions all begin with <Leader>g.
     - [fzf] functions all begin with <Leader>f.
     - [Unite] buffers are mapped to <Leader>{abey}.
@@ -518,7 +519,8 @@ m{motion}                          M moves to the end of line.
 <Leader>x{xz}           [togglelist] Toggle the quickfi[x]
                                      or [l]ocation list.
                                                         *<Leader>+*
-<Leader>+               [Autoformat] Synonym for `:Autoformat`.
+<Leader>+               [ALE] In normal mode, synonym for :ALEFix.
+                        [Autoformat] In visual mode, synonym for `:Autoformat`.
 
                                                         *<Leader>;*
                                                         *<Leader>;;*
