@@ -1,3 +1,13 @@
+function! s:local_python_fixers()
+  let l:fixers = []
+
+  if executable('black')
+    call add(l:fixers, 'black')
+  endif
+
+  return l:fixers
+endfunction
+
 function! s:local_css_makers()
   let l:linters = []
 
@@ -79,4 +89,6 @@ augroup ale-linters-node
     \ let b:ale_fixers = s:local_javascript_makers()
   autocmd FileType typescriptreact
     \ let b:ale_fixers = s:local_javascript_makers()
+  autocmd FileType python
+    \ let b:ale_fixers = s:local_python_fixers()
 augroup END
