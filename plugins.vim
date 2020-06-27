@@ -361,22 +361,6 @@ let g:strip_whitespace_confirm = 0
 " Enable deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" Complete file paths relative to the current buffer.
-let g:deoplete#file#enable_buffer_path = 1
-
-" Initialize deoplete globals.
-if !exists('g:deoplete#keyword_patterns')
-  let g:deoplete#keyword_patterns = {}
-endif
-
-if !exists('g:deoplete#sources')
-  let g:deoplete#sources = {}
-endif
-
-if !exists('g:deoplete#omni_patterns')
-  let g:deoplete#omni_patterns = {}
-endif
-
 "
 " GitGutter
 
