@@ -30,6 +30,9 @@ Plug 'tpope/vim-sensible'
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
 
+" WakaTime
+Plug 'wakatime/vim-wakatime'
+
 " Prompt and Statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
