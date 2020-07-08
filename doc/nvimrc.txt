@@ -97,7 +97,7 @@ Mappings (not listed under |nvimrc-mappings|)
     - <C-L> closes the popup (keep completion).
     - <C-W> smart-closes the popup (cancel completion).
     - <CR> closes the popup and exits insert mode (cancel completion).
-    - <Tab> expands snippets and <C-L> and <C-H> navigate them.
+    - <Tab> expands snippets and <Tab> and <S-Tab> navigate them.
 
 ------------------------------------------------------------------------------
 2.2 Unite settings                                      *nvimrc-settings-unite*
