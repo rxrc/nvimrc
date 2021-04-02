@@ -83,7 +83,9 @@ Plug 'tpope/vim-abolish'
 Plug 'ntpeters/vim-better-whitespace'
 
 " Clipboard
-Plug 'svermeulen/vim-easyclip'
+Plug 'svermeulen/vim-cutlass'
+Plug 'svermeulen/vim-yoink'
+Plug 'svermeulen/vim-subversive'
 
 " Buffer
 Plug 'moll/vim-bbye'
@@ -431,3 +433,10 @@ let g:necoghc_use_stack = 1
 
 " Disable default ri.vim mappings.
 let g:ri_no_mappings = 1
+
+"
+" Yoink.vim
+let g:yoinkMaxItems = 20
+let g:yoinkSavePersistently = 1
+let g:yoinkSwapClampAtEnds = 0
+let g:yoinkIncludeDeleteOperations = 1
