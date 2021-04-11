@@ -1,2 +1,2 @@
 " Add shortcuts for Autoformat.
-vnoremap <Leader>+ :Autoformat<CR>
+vnoremap <Leader>+ :ALEFix<CR>
