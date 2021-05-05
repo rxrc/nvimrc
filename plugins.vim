@@ -338,6 +338,11 @@ let g:colorizer_auto_filetype = join([
 let g:rainbow_active = 1
 
 "
+" oceanic-next
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+
+"
 " Sneak
 let g:sneak#label = 1
 
