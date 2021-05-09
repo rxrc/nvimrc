@@ -246,6 +246,11 @@ Plug 'zchee/deoplete-jedi',
      \ { 'for': 'python' }
      \ | Plug 'lambdalisue/vim-pyenv',
               \ { 'for': 'python' }
+
+"
+" Markdown
+Plug 'tpope/vim-markdown'
+
 " Riot
 Plug 'ryym/vim-riot',
      \ { 'for': 'riot' }
