@@ -162,8 +162,8 @@ Critically different mappings
     - <C-Tab> navigates the jump list in reverse (<C-I>).
     - ` and ' are swapped.
     - & is remapped to reuse flags (synonym for `:&&`).
-    - [EasyClip] takes over m and M (<C-G> is mapped to M).
-    - : is the [EasyClip] substitution operator.
+    - [Cutlass] takes over m and M (<C-G> is mapped to M).
+    - : is the [Cutlass] substitution operator.
       and <C-;> is the substitution operator for the system clipboard.
     - [Sneak] takes over s and S.
     - Marks are handled by [Signature] with <Leader>;.
@@ -233,7 +233,7 @@ Interfaces
 Toggles
     - yoa toggles [Rainbow Parentheses].
     - yoe toggles [lexima] on the current buffer.
-    - yof toggles [EasyClip] paste formatting.
+    - yof toggles [Yoink] paste formatting.
     - yom toggles the colorcolumn display.
     - yoP toggles the <Leader>p, <Leader>P, and <Leader>c
       mappings between using the `+` (default) and `*` registers.
@@ -424,7 +424,7 @@ yoa                     [Rainbow Parentheses] Synonym for `:RainbowToggle`.
 yoe                     [lexima] Toggle lexima on current buffer.
 
                                                         *yof*
-yof                     [EasyClip] Toggle paste formatting.
+yof                     [Yoink] Toggle paste formatting.
 
                                                         *yoz*
 yoz                     [Unicode] Toggle unicode name or glyph completion.
@@ -434,12 +434,12 @@ yoU                     [fzf] [Unite] Toggle between fzf and Unite.
 
 
                                                         *m* *M* *mm*
-mm               or     [EasyClip] Move motion.
+mm               or     [Cutlass] Move motion.
 M                or                mm moves the current line.
 m{motion}                          M moves to the end of line.
 
                                                         *:* *::*
-:                or     [EasyClip] Substitution operator.
+:                or     [Cutlass] Substitution operator.
 ::                                 :: substitutes the entire line.
 
                                                         *\\*
@@ -449,7 +449,7 @@ m{motion}                          M moves to the end of line.
 <C-E>                   [Emmet] In insert mode, emmet expander key.
 
                                                         *<C-G>* *<C-G><C-G>*
-<C-G>            or     [EasyClip] Substitution operator for system clipboard.
+<C-G>            or     [Cutlass] Substitution operator for system clipboard.
 <C-G><C-G>                         <C-G><C-G> substitutes the entire line.
 
                                                         *<C-O>*
