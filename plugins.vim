@@ -111,9 +111,6 @@ Plug 'chrisbra/unicode.vim',
      \ { 'do': join(['curl --create-dirs -o', unicode_dest, unicode_src], ' ')}
 
 " Autocompletion
-Plug 'shougo/deoplete.nvim',
-     \ { 'do': ':UpdateRemotePlugins' }
-Plug 'shougo/neoinclude.vim'
 Plug 'sirver/ultisnips'
 Plug 'rxrc/vim-snippets',
      \ { 'branch': 'rxrc' }
@@ -228,9 +225,6 @@ Plug 'isruslan/vim-es6',
 Plug 'ternjs/tern_for_vim',
      \ { 'for': language_groups['javascript'] }
 
-Plug 'carlitux/deoplete-ternjs',
-     \ { 'for': language_groups['javascript'] }
-
 " LaTeX
 Plug 'lervag/vimtex',
      \ { 'for': 'tex' }
@@ -238,11 +232,6 @@ Plug 'lervag/vimtex',
 " Python
 Plug 'tmhedberg/simpylfold',
      \ { 'for': 'python' }
-
-Plug 'zchee/deoplete-jedi',
-     \ { 'for': 'python' }
-     \ | Plug 'lambdalisue/vim-pyenv',
-              \ { 'for': 'python' }
 
 "
 " Markdown
@@ -262,9 +251,6 @@ Plug 'tpope/vim-bundler',
 Plug 'danchoi/ri.vim',
      \ { 'for': 'ruby' }
 
-Plug 'fishbullet/deoplete-ruby',
-     \ { 'for': 'ruby' }
-
 " Terraform
 Plug 'hashivim/vim-terraform',
      \ { 'for': 'terraform' }
@@ -274,8 +260,6 @@ Plug 'juliosueiras/vim-terraform-completion',
 
 Plug 'quramy/tsuquyomi',
      \ { 'for': 'typescript' }
-
-Plug 'rudism/deoplete-tsuquyomi'
 
 "
 " Web
@@ -366,12 +350,6 @@ let g:better_whitespace_enabled = 1
 let g:strip_whitespace_on_save = 1
 let g:better_whitespace_operator = ''
 let g:strip_whitespace_confirm = 0
-
-"
-" deoplete
-
-" Enable deoplete.
-let g:deoplete#enable_at_startup = 1
 
 "
 " GitGutter
