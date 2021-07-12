@@ -205,10 +205,6 @@ Plug 'venantius/vim-eastwood',
 Plug 'severeoverfl0w/async-clj-omni',
      \ { 'for': 'clojure' }
 
-" Flow
-Plug 'flowtype/vim-flow',
-     \ { 'for': language_groups['javascript'] }
-
 " GraphQL
 Plug 'jparise/vim-graphql'
 
@@ -254,9 +250,6 @@ Plug 'hashivim/vim-terraform',
 
 Plug 'juliosueiras/vim-terraform-completion',
      \ { 'for': 'terraform' }
-
-Plug 'quramy/tsuquyomi',
-     \ { 'for': 'typescript' }
 
 "
 " Web
@@ -399,12 +392,6 @@ endif
 let g:polyglot_disabled = [
   \ 'latex'
   \ ]
-
-" Load jsx syntax for normal javascript files.
-let g:jsx_ext_required = 0
-
-" Enable syntax highlighting for Flow.
-let g:javascript_plugin_flow = 1
 
 "
 " Haskell
