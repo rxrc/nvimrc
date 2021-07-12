@@ -173,6 +173,10 @@ let language_groups = {
   \         'javascript', 'javascript.jsx', 'liquid', 'mjml', 'sass', 'scss']
   \ }
 
+"
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
+
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
 
