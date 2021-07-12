@@ -474,10 +474,6 @@ m{motion}                          M moves to the end of line.
                              result window split horizontally (d)
                              or vertically (D).
 
-                        [tern] Prompt to lookup documentation with
-                               `:TernDoc` or `:TernDocBrowse`.
-
-
                                                         *<Leader>A*
 <Leader>A               [Grepper] Prompt to search with Grepper.
 

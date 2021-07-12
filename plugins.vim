@@ -222,9 +222,6 @@ Plug 'eagletmt/neco-ghc',
 Plug 'isruslan/vim-es6',
      \ { 'for': language_groups['javascript'] }
 
-Plug 'ternjs/tern_for_vim',
-     \ { 'for': language_groups['javascript'] }
-
 " LaTeX
 Plug 'lervag/vimtex',
      \ { 'for': 'tex' }
