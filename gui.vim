@@ -10,9 +10,24 @@ set mousefocus
 " Set right mouse button action.
 set mousemodel=extend
 
-" Set font.
-if exists('GuiFont')
-  GuiFont Inconsolata-g for Powerline:h12
+if exists(':GuiFont')
+  GuiFont! Fira Code:h13
+endif
+
+if exists(':GuiRenderLigatures')
+  GuiRenderLigatures 1
+endif
+
+if exists(':GuiTabline')
+  GuiTabline 0
+endif
+
+if exists(':GuiPopupmenu')
+  GuiPopupmenu 0
+endif
+
+if exists(':GuiScrollBar')
+  GuiScrollBar 1
 endif
 
 " Set color scheme and vim-airline theme dynamically.
