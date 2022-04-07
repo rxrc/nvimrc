@@ -173,7 +173,7 @@ Plug 'junegunn/fzf.vim'
 let language_groups = {
   \ 'javascript': ['javascript', 'javascript.jsx'],
   \ 'web': ['css', 'html', 'html.handlebars', 'tag',
-  \         'javascript', 'javascript.jsx', 'liquid', 'sass', 'scss']
+  \         'javascript', 'javascript.jsx', 'liquid', 'mjml', 'sass', 'scss']
   \ }
 
 " Vim-polyglot
