@@ -248,6 +248,10 @@ Plug 'zchee/deoplete-jedi',
 " Markdown
 Plug 'tpope/vim-markdown'
 
+"
+" MJML
+Plug 'amadeus/vim-mjml'
+
 " Riot
 Plug 'ryym/vim-riot',
      \ { 'for': 'riot' }
