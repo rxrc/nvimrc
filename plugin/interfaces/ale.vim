@@ -1,4 +1,4 @@
-# Fix on save.
+" Fix on save.
 let g:ale_fix_on_save = 1
 
 function! s:local_python_fixers()
