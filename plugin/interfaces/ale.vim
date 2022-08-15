@@ -35,7 +35,7 @@ endfunction
 function! s:local_javascript_makers()
   let l:linters = []
 
-  if executable('eslint') && filereadable(findfile('.eslintrc.json', '.;')) && executable('prettier')
+  if executable('eslint') && (filereadable(findfile('.eslintrc.json', '.;')) || filereadable(findfile('.eslintrc.cjs', '.;'))) && executable('prettier')
     call add(l:linters, 'prettier')
     call add(l:linters, 'eslint')
     return l:linters
