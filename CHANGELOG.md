@@ -11,7 +11,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Basic mjml support.
 - Enable gofmt ALE fixer.
-- Enable default whitespace ALE fixers.
 - Look for .eslintrc.cjs.
 
 ### Changed
