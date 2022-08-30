@@ -110,11 +110,6 @@ let unicode_dest = './autoload/unicode/UnicodeData.txt'
 Plug 'chrisbra/unicode.vim',
      \ { 'do': join(['curl --create-dirs -o', unicode_dest, unicode_src], ' ')}
 
-" Autocompletion
-Plug 'sirver/ultisnips'
-Plug 'rxrc/vim-snippets',
-     \ { 'branch': 'rxrc' }
-
 " Unite.vim
 Plug 'shougo/vimproc.vim',
      \ { 'do': 'make \|\| gmake' }

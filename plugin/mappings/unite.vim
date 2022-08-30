@@ -44,10 +44,6 @@ end
 " Add mapping for Unite neoyank buffer.
 nnoremap <Leader>y :<C-U>Unite -no-split -buffer-name=yank history/yank<CR>
 
-" Add mapping for Unite UltiSnips buffer.
-nnoremap <C-Space> :<C-U>Unite
-  \ -start-insert -winheight=100 -immediately -no-empty ultisnips<CR>
-
 " Apply unite mappings when opening unite buffer.
 augroup unite-buffer-mappings
   autocmd!

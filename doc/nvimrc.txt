@@ -87,17 +87,14 @@ Editor
 ------------------------------------------------------------------------------
 2.1 Autocompletion settings                    *nvimrc-settings-autocompletion*
 
-Autocompletion is handled by deoplete and UltiSnips.
-File type specific settings are defined under `plugin/autocompletion`.
+Autocompletion is handled by LSP Zero.
 
 Mappings (not listed under |nvimrc-mappings|)
-    - <C-Space> opens the Unite UltiSnips buffer from normal mode.
-    - <C-Space> starts manual completion from insert mode.
     - <C-J> and <C-K> navigate the popup in either direction.
     - <C-L> closes the popup (keep completion).
-    - <C-W> smart-closes the popup (cancel completion).
+    - <C-W> backspace word and closes the popup (cancel completion).
     - <CR> closes the popup and exits insert mode (cancel completion).
-    - <Tab> expands snippets and <Tab> and <S-Tab> navigate them.
+    - <Tab> and <S-Tab> navigates snippets.
 
 ------------------------------------------------------------------------------
 2.2 Unite settings                                      *nvimrc-settings-unite*
@@ -129,7 +126,7 @@ the corresponding plugin, e.g., `fzf.vim`.
 
 Alternatively, mappings spanning several interrelated plugs may be
 grouped under a single file, e.g., `autocompletion.vim` may
-contain mappings for deoplete, UltiSnips, etc.
+contain mappings for cmp, LuaSnip, etc.
 (in which case the plugin names will appear in a comment if unspecified).
 
 The special file `neovim.vim` is reserved for native Neovim mappings.
@@ -168,12 +165,12 @@ Critically different mappings
     - [Sneak] takes over s and S.
     - Marks are handled by [Signature] with <Leader>;.
       Use <Leader>;; to toggle marks.
-    - Autocompletion with [deoplete] and [UltiSnips]:
+    - Autocompletion with [LSP Zero]:
       see |nvimrc-settings-autocompletion|.
 
 Shortcuts for common functions
     - <C-H>, <C-J>, <C-K>, and <C-L> move between splits,
-      move the cursor, scroll through history, and navigate popups and snippets.
+      move the cursor, scroll through history, and navigate popups.
       They serve as general alternatives to the arrow keys when possible.
       [Vim Tmux Navigator] implements split navigation.
     - <C--> and <C-=> moves lines up and down with [unimpaired].
