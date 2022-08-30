@@ -1,6 +1,11 @@
 " Fix on save.
 let g:ale_fix_on_save = 1
 
+let g:ale_fixers = {
+  \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+  \ 'go': ['gofmt']
+  \ }
+
 function! s:local_python_fixers()
   let l:fixers = []
 
