@@ -31,10 +31,10 @@ A GUI is optional, but this config is also tested with [neovim-qt].
 
 ### Fonts
 
-The GUI font is [Inconsolata-g],
+The GUI font is [Fira Code],
 and vim-airline is set to use [Powerline fonts].
 
-[Inconsolata-g]: https://github.com/powerline/fonts/tree/master/Inconsolata-g
+[Fira Code]: https://github.com/tonsky/FiraCode
 [Powerline fonts]: https://github.com/powerline/fonts
 
 ### GitHub Issues
