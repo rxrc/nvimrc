@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.0] / 2022-08-30
+
+### Added
+
+- Basic mjml support.
+- Enable gofmt ALE fixer.
+- Enable default whitespace ALE fixers.
+- Look for .eslintrc.cjs.
+
+### Changed
+
+- Use Fira Code.
+
+### Removed
+
+- WakaTime plugin.
+
 ## [3.1.0] / 2021-07-05
 
 ### Changed
@@ -95,7 +112,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Initial release.
 
-[Unreleased]: https://github.com/rxrc/nvimrc/compare/v3.1.0...HEAD
+[Unreleased]: https://github.com/rxrc/nvimrc/compare/v3.2.0...HEAD
+[3.2.0]: https://github.com/rxrc/nvimrc/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/rxrc/nvimrc/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/rxrc/nvimrc/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/rxrc/nvimrc/compare/v1.1.0...v2.0.0
