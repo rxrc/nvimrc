@@ -9,6 +9,17 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 lsp.setup_nvim_cmp({
   mapping = lsp.defaults.cmp_mappings({
+    ['<CR>'] = cmp.mapping({
+      i = function(fallback)
+        if cmp.visible() then
+          cmp.mapping.confirm({ select = false })()
+          vim.api.nvim_input('<ESC>')
+        else
+          fallback()
+        end
+      end,
+      n = cmp.mapping.confirm({ select = true }),
+    }),
     ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-l>'] = cmp.mapping.confirm({ select = true }),
