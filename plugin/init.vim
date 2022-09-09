@@ -48,3 +48,5 @@ lsp.setup_nvim_cmp({
 lsp.nvim_workspace()
 lsp.setup()
 EOF
+
+nnoremap <silent> gR :lua vim.lsp.buf.rename()<CR>
