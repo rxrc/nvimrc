@@ -25,7 +25,12 @@ lsp.setup_nvim_cmp({
     end, { 'i', 's' }),
     ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-l>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-l>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        return cmp.mapping.confirm({ select = true })()
+      end
+      vim.api.nvim_input('<Right>')
+    end, { 'i', 'c' }),
     -- go to next placeholder in the snippet
     ['<Tab>'] = cmp.mapping(function(fallback)
       if luasnip.jumpable(1) then
