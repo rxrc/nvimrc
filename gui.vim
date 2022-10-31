@@ -11,7 +11,7 @@ set mousefocus
 set mousemodel=extend
 
 if exists(':GuiFont')
-  GuiFont! Fira Code:h13
+  GuiFont! FiraCode Nerd Font:h13
 endif
 
 if exists(':GuiRenderLigatures')
@@ -38,7 +38,7 @@ colorscheme one
 
 " Set nvim-gtk settings.
 if exists('g:GtkGuiLoaded')
-  call rpcnotify(1, 'Gui', 'Font', 'Fira Code 13')
+  call rpcnotify(1, 'Gui', 'Font', 'FiraCode Nerd Font 13')
   call rpcnotify(1, 'Gui', 'Option', 'Tabline', 0)
   call rpcnotify(1, 'Gui', 'Option', 'Popupmenu', 0)
 endif

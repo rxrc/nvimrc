@@ -31,10 +31,10 @@ A GUI is optional, but this config is also tested with [neovim-qt].
 
 ### Fonts
 
-The GUI font is [Fira Code],
+The GUI font is [Fira Code Nerd Font],
 and vim-airline is set to use [Powerline fonts].
 
-[Fira Code]: https://github.com/tonsky/FiraCode
+[Fira Code Nerd Font]: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode
 [Powerline fonts]: https://github.com/powerline/fonts
 
 ### GitHub Issues
