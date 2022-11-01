@@ -79,13 +79,13 @@ containing a [GitHub personal access token].
 You can install this via the command-line with either curl
 
 ```
-$ curl -L https://git.io/vwYRO | sh
+$ curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
 ```
 
 or wget
 
 ```
-$ wget https://git.io/vwYRO -O - | sh
+$ wget https://rc.evansosenko.com/nvimrc/install.sh -O - | sh
 ```
 
 ### Manual Install
