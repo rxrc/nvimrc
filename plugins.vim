@@ -41,6 +41,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 let g:airline#extensions#promptline#enabled = 0
 
 " Themes and Colors
+Plug 'vimpostor/vim-lumen'
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
