@@ -11,6 +11,7 @@ if exists("g:neovide")
   " Set right mouse button action.
   set mousemodel=extend
 
+  " Set GUI font.
   set guifont=Fira\ Code\ Nerd\ Font:h14
 
   " Set color scheme and vim-airline theme dynamically.
