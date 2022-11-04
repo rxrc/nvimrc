@@ -1,4 +1,4 @@
-if exists("g:neovide")
+if exists("g:neovide") || !empty($KITTY_PID)
   " Enable true color mode.
   set termguicolors
 
@@ -10,22 +10,30 @@ if exists("g:neovide")
 
   " Set right mouse button action.
   set mousemodel=extend
+endif
 
+if exists("g:neovide")
   " Set GUI font.
   set guifont=Fira\ Code\ Nerd\ Font:h14
 
-  " Set color scheme and vim-airline theme dynamically.
-  let g:zenburn_high_Contrast = 1
+  " Set color scheme.
   colorscheme onedark
+  let g:airline_theme = 'onedark'
 
+  " Toggle color scheme.
+  function! s:dark_theme()
+    colorscheme onedark
+    let g:airline_theme = 'onedark'
+  endfunction
+  function! s:light_theme()
+    colorscheme one
+    let g:airline_theme = 'one'
+  endfunction
   augroup lumen-neovide
-    autocmd User LumenLight colorscheme one
-    autocmd User LumenDark colorscheme onedark
+    autocmd User LumenLight call s:light_theme()
+    autocmd User LumenDark call s:dark_theme()
   augroup END
 else
-  " Set maximum terminal color space.
-  set t_Co=256
-
   " Set promptline.vim theme.
   let g:promptline_theme = 'airline'
 
