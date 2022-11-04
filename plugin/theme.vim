@@ -17,17 +17,16 @@ if exists("g:neovide")
   set guifont=Fira\ Code\ Nerd\ Font:h14
 
   " Set color scheme.
-  colorscheme onedark
-  let g:airline_theme = 'onedark'
+  let g:airline_theme = 'one'
+  set background=dark
+  colorscheme one
 
   " Toggle color scheme.
   function! s:dark_theme()
-    colorscheme onedark
-    let g:airline_theme = 'onedark'
+    set background=dark
   endfunction
   function! s:light_theme()
-    colorscheme one
-    let g:airline_theme = 'one'
+    set background=light
   endfunction
   augroup lumen-neovide
     autocmd User LumenLight call s:light_theme()
