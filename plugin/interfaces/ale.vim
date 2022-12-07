@@ -42,29 +42,26 @@ endfunction
 function! s:local_javascript_makers()
   let l:linters = []
 
-  if executable('eslint') && (filereadable(findfile('.eslintrc.json', '.;')) || filereadable(findfile('.eslintrc.cjs', '.;'))) && executable('prettier')
+  if executable('prettier')
     call add(l:linters, 'prettier')
-    call add(l:linters, 'eslint')
-    return l:linters
   endif
 
   if executable('flow') && filereadable(findfile('.flowconfig', '.;'))
     call add(l:linters, 'flow')
   endif
 
-  if executable('standard') && executable('prettier')
-    call add(l:linters, 'prettier')
-    call add(l:linters, 'standard')
+  if executable('xo')
+    call add(l:linters, 'xo')
     return l:linters
   endif
 
-  if executable('standard') && !executable('tsc')
-    call add(l:linters, 'standard')
+  if executable('eslint') && (filereadable(findfile('.eslintrc.json', '.;')) || filereadable(findfile('.eslintrc.cjs', '.;')))
+    call add(l:linters, 'eslint')
     return l:linters
   endif
 
-  if executable('prettier')
-    call add(l:linters, 'prettier')
+  if executable('standard')
+    call add(l:linters, 'standard')
     return l:linters
   endif
 
