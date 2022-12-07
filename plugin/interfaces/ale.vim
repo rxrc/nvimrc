@@ -101,4 +101,8 @@ augroup ale-linters-node
     \ let b:ale_fixers = s:local_javascript_makers()
   autocmd FileType python
     \ let b:ale_fixers = s:local_python_fixers()
+  autocmd FileType ruby
+    \ let b:ale_linters = ['standardrb']
+  autocmd FileType ruby
+    \ let b:ale_fixers = ['standardrb']
 augroup END
