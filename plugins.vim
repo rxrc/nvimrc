@@ -173,6 +173,8 @@ let language_groups = {
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'folke/trouble.nvim'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'
