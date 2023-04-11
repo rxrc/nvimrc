@@ -37,7 +37,7 @@ if executable('fzf')
     \ ":<C-U>call UniteMappings(0)<CR>"
 
   call FzfMappings(1)
-elseif
+else
   call UniteMappings(1)
 end
 
