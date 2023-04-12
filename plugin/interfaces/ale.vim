@@ -1,6 +1,13 @@
 " Fix on save.
 let g:ale_fix_on_save = 1
 
+let g:ale_virtualtext_cursor = 0
+let g:ale_cursor_detail = 1
+let g:ale_detail_to_floating_preview = 1
+let g:ale_echo_cursor = 0
+let g:ale_hover_cursor = 0
+let g:airline#extensions#ale#enabled = 1
+
 let g:ale_fixers = {
   \ 'go': ['gofmt']
   \ }
