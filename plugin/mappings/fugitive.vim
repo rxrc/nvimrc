@@ -7,9 +7,7 @@ nnoremap <Leader>gm :<C-U>GMove<Space>
 nnoremap <silent> <Leader>gd :<C-U>Gdiffsplit!<CR>
 nnoremap <silent> <Leader>gs :<C-U>Git status<CR>
 nnoremap <silent> <Leader>ga :<C-U>Gwrite<CR>
-nnoremap <silent> <Leader>gl :<C-U>Glog<CR>
-nnoremap <silent> <Leader>gh :<C-U>GBrowse<CR>
-nnoremap <silent> <Leader>gr :<C-U>Gread<CR>
+nnoremap <silent> <Leader>gl :<C-U>G log<CR>
 nnoremap <silent> <Leader>gc :<C-U>Git commit<CR>
-nnoremap <silent> <Leader>gb :<C-U>Gblame<CR>
+nnoremap <silent> <Leader>gb :<C-U>G blame<CR>
 nnoremap <silent> <Leader>gw :<C-U>GRemove<CR>
