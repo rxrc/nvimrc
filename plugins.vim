@@ -188,7 +188,8 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
 
-Plug 'VonHeikemen/lsp-zero.nvim'
+Plug 'VonHeikemen/lsp-zero.nvim',
+     \ { 'branch': 'v2.x' }
 
 " Vim-polyglot
 Plug 'sheerun/vim-polyglot'
