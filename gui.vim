@@ -34,7 +34,6 @@ endif
 let g:zenburn_high_Contrast = 1
 let g:airline_theme = 'one'
 set background=dark
-colorscheme one
 
 " Set nvim-gtk settings.
 if exists('g:GtkGuiLoaded')

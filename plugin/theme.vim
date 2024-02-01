@@ -14,7 +14,7 @@ endif
 
 if exists("g:neovide")
   " Set GUI font.
-  set guifont=Fira\ Code\ Nerd\ Font:h14
+  set guifont=FiraCode\ Nerd\ Font:h14
 
   " Set color scheme.
   let g:airline_theme = 'one'
