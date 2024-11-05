@@ -1,2 +1,2 @@
 " Toggle Trouble window
-nnoremap <Leader>d <CMD>TroubleToggle<CR>
+nnoremap <Leader>d :TroubleToggle<CR>

@@ -174,7 +174,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'folke/trouble.nvim'
+Plug 'folke/trouble.nvim',
+     \ { 'commit': 'f1168feada93c0154ede4d1fe9183bf69bac54ea' }
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'
