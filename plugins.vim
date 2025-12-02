@@ -148,8 +148,8 @@ Plug 'ron89/thesaurus_query.vim'
 " Projectionist
 Plug 'tpope/vim-projectionist'
 
-" tmux
-Plug 'christoomey/vim-tmux-navigator'
+" kitty
+Plug 'mrjones2014/smart-splits.nvim'
 
 " Grepper
 Plug 'mhinz/vim-grepper'
