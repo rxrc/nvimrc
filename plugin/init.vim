@@ -3,6 +3,8 @@ lua <<EOF
 local cmp = require('cmp')
 local luasnip = require('luasnip')
 
+require('kitty-scrollback').setup()
+
 vim.opt.completeopt = { 'menu', 'menuone', 'noinsert', 'noselect' }
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 

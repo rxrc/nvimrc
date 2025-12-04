@@ -150,6 +150,7 @@ Plug 'tpope/vim-projectionist'
 
 " kitty
 Plug 'mrjones2014/smart-splits.nvim'
+Plug 'mikesmithgh/kitty-scrollback.nvim'
 
 " Grepper
 Plug 'mhinz/vim-grepper'
