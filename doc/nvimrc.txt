@@ -151,6 +151,7 @@ Critically different mappings
       in normal or insert mode. Always ends in insert mode.
     - In insert mode, use <C-J> to split the line and <C-K> to unsplit it.
     - In insert mode, <C-H> is <BS> and <BS> is <Left>, but <C-L> is <Right>.
+    - In command-line mode, <C-H> is <BS> and <BS> is <Left>.
     - Enter opens command-line mode from normal or visual mode.
     - <S-Esc> toggles the command-line window in normal or visual mode.
     - U is mapped to redo and <C-R> is mapped to the original U key.
