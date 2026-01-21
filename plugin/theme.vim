@@ -19,7 +19,7 @@ if exists("g:neovide")
   " Set color scheme.
   let g:airline_theme = 'one'
   set background=dark
-  colorscheme one
+  colorscheme molokai
 
   " Toggle color scheme.
   function! s:dark_theme()
