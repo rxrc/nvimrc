@@ -73,6 +73,7 @@ augroup END
 cnoremap <BS> <Left>
 cnoremap <C-H> <BS>
 cnoremap <C-L> <Right>
+cnoremap <C-A> <Home>
 
 " Use ctrl-k and ctrl-j to navigate command history.
 cnoremap <C-K> <Up>
