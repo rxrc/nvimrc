@@ -1,21 +1,19 @@
 " Create and set cache directories.
-if empty($XDG_CACHE_HOME)
-  let $XDG_CACHE_HOME = $HOME . '/.cache'
-endif
+let s:cache_root = stdpath('cache')
 
-if !isdirectory($XDG_CACHE_HOME . '/nvim')
-  call mkdir($XDG_CACHE_HOME . '/nvim', 'p')
+if !isdirectory(s:cache_root)
+  call mkdir(s:cache_root, 'p')
 endif
 
 for dir in ['backup', 'swap', 'undo', 'session']
-  if !isdirectory($XDG_CACHE_HOME . '/nvim/' . dir)
-    call mkdir($XDG_CACHE_HOME . '/nvim/' . dir, 'p')
+  if !isdirectory(s:cache_root . '/' . dir)
+    call mkdir(s:cache_root . '/' . dir, 'p')
   endif
 endfor
 
-set backupdir=$XDG_CACHE_HOME/nvim/backup
-set directory=$XDG_CACHE_HOME/nvim/swap
-set undodir=$XDG_CACHE_HOME/nvim/undo
+let &backupdir = s:cache_root . '/backup'
+let &directory = s:cache_root . '/swap'
+let &undodir = s:cache_root . '/undo'
 
 " Set vim-session path (created above).
-let g:session_directory = $XDG_CACHE_HOME . '/nvim/session'
+let g:session_directory = s:cache_root . '/session'

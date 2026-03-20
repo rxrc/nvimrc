@@ -7,7 +7,8 @@ main () {
   repo='rxrc/nvimrc'
 
   config_home=${XDG_CONFIG_HOME:-$HOME/.config}
-  nvim_root="${config_home}/nvim"
+  app_name=${NVIM_APPNAME:-nvim}
+  nvim_root="${config_home}/${app_name}"
 
   if [ "${1:-}" == 'dev' ]; then
     dev_mode
@@ -75,14 +76,12 @@ install_nvimrc () {
   tee $nvim_root/init.vim >/dev/null <<EOF
 " $repo
 
-if empty(\$XDG_CONFIG_HOME)
-  let \$XDG_CONFIG_HOME = \$HOME . '/.config'
-endif
+let s:config_root = stdpath('config')
 
-call plug#begin(\$XDG_CONFIG_HOME . '/nvim/plugged')
+call plug#begin(s:config_root . '/plugged')
 
-if filereadable(\$XDG_CONFIG_HOME . '/nvim/plugged/nvimrc/plugins.vim')
-  source \$XDG_CONFIG_HOME/nvim/plugged/nvimrc/plugins.vim
+if filereadable(s:config_root . '/plugged/nvimrc/plugins.vim')
+  execute 'source ' . fnameescape(s:config_root . '/plugged/nvimrc/plugins.vim')
   if \$NVIMRC_INSTALL != 'true'
     Plug '$repo'
   endif
@@ -114,11 +113,7 @@ EOF
   tee $nvim_root/ginit.vim >/dev/null <<EOF
 " $repo
 
-if empty(\$XDG_CONFIG_HOME)
-  let \$XDG_CONFIG_HOME = \$HOME . '/.config'
-endif
-
-source \$XDG_CONFIG_HOME/nvim/plugged/nvimrc/gui.vim
+execute 'source ' . fnameescape(stdpath('config') . '/plugged/nvimrc/gui.vim')
 EOF
 
   echo -e "\033[32m    ✔ Installed   ❰ ${nvim_root}/ginit.vim ❱   \033[0m"
@@ -139,16 +134,16 @@ EOF
 }
 
 dev_mode () {
-  f_str[0]="call plug#begin(\$XDG_CONFIG_HOME . '/nvim/plugged')"
-  r_str[0]="call plug#begin(\$XDG_CONFIG_HOME . '/nvim/plugged.dev')"
+  f_str[0]="call plug#begin(s:config_root . '/plugged')"
+  r_str[0]="call plug#begin(s:config_root . '/plugged.dev')"
 
   f_str[1]="Plug '${repo}'"
   r_str[1]="Plug '$(pwd)'"
 
-  f_str[2]="\$XDG_CONFIG_HOME . '/nvim/plugged/nvimrc/plugins.vim'"
+  f_str[2]="s:config_root . '/plugged/nvimrc/plugins.vim'"
   r_str[2]="'' . '$(pwd)/plugins.vim'"
 
-  f_str[3]='$XDG_CONFIG_HOME/nvim/plugged/nvimrc/plugins.vim'
+  f_str[3]="s:config_root . '/plugged/nvimrc/plugins.vim'"
   r_str[3]="$(pwd)/plugins.vim"
 
   echo -e "\033[32m➤ Entering development mode!   \033[0m"
@@ -159,7 +154,7 @@ dev_mode () {
     i=$(( i + 1 ))
   done
 
-  f_gstr='$XDG_CONFIG_HOME/nvim/plugged/nvimrc/gui.vim'
+  f_gstr="stdpath('config') . '/plugged/nvimrc/gui.vim'"
   r_gstr="$(pwd)/gui.vim"
 
   sed -i -e "s|${f_gstr}|${r_gstr}|g" $nvim_root/ginit.vim

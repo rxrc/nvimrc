@@ -16,6 +16,9 @@ all desired Neovim plugins are loaded from `plugins.vim` using [vim-plug],
 and any GUI specific options are set in `gui.vim`.
 Overall configuration then follows a normal plugin structure.
 
+If `NVIM_APPNAME` is set, installation and runtime paths follow that app name.
+Otherwise, the default `nvim` paths are used.
+
 For documentation of this Neovim configuration,
 see `:help nvimrc` or view [nvimrc.txt](./doc/nvimrc.txt) directly.
 
@@ -88,23 +91,28 @@ or wget
 $ wget https://rc.evansosenko.com/nvimrc/install.sh -O - | sh
 ```
 
+To install into an isolated Neovim app, set `NVIM_APPNAME` first:
+
+```
+$ NVIM_APPNAME=nvimrc curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
+```
+
 ### Manual Install
 
 1. Install [vim-plug].
 
-2. Create `~/.config/nvim/init.vim` with
+2. Create `init.vim` in the active config directory
+   (`~/.config/nvim` by default, or `~/.config/<appname>` when `NVIM_APPNAME` is set):
 
    ```vim
    " rxrc/nvimrc
 
-   if empty($XDG_CONFIG_HOME)
-     let $XDG_CONFIG_HOME = $HOME . '/.config'
-   endif
+   let s:config_root = stdpath('config')
 
-   call plug#begin($XDG_CONFIG_HOME . '/nvim/plugged')
+   call plug#begin(s:config_root . '/plugged')
 
-   if filereadable($XDG_CONFIG_HOME . '/nvim/plugged/nvimrc/plugins.vim')
-     source $XDG_CONFIG_HOME/nvim/plugged/nvimrc/plugins.vim
+   if filereadable(s:config_root . '/plugged/nvimrc/plugins.vim')
+     execute 'source ' . fnameescape(s:config_root . '/plugged/nvimrc/plugins.vim')
      if $NVIMRC_INSTALL != 'true'
        Plug 'rxrc/nvimrc'
      endif
@@ -115,16 +123,12 @@ $ wget https://rc.evansosenko.com/nvimrc/install.sh -O - | sh
    call plug#end()
    ```
 
-   and `~/.config/nvim/ginit.vim` with
+   and `ginit.vim` in the same directory:
 
    ```vim
-   " makenew/nvimrc
+   " rxrc/nvimrc
 
-   if empty($XDG_CONFIG_HOME)
-     let $XDG_CONFIG_HOME = $HOME . '/.config'
-   endif
-
-   source $XDG_CONFIG_HOME/nvim/plugged/nvimrc/gui.vim
+   execute 'source ' . fnameescape(stdpath('config') . '/plugged/nvimrc/gui.vim')
    ```
 
 3. Run
@@ -133,6 +137,8 @@ $ wget https://rc.evansosenko.com/nvimrc/install.sh -O - | sh
    $ nvim -c PlugInstall
    $ NVIMRC_INSTALL=true nvim -c PlugInstall
    ```
+
+   To use an isolated app, run the same commands with `NVIM_APPNAME=nvimrc`.
 
 ### Updating
 
@@ -143,7 +149,10 @@ Here is an example of a shell function that will provide a one-step update:
 ```zsh
 # Upgrade nvimrc.
 nvimupg () {
-  if ! [[ -e $XDG_CONFIG_HOME/nvim/autoload/plug.vim ]]; then
+  local config_home=${XDG_CONFIG_HOME:-$HOME/.config}
+  local app_name=${NVIM_APPNAME:-nvim}
+
+  if ! [[ -e ${config_home}/${app_name}/autoload/plug.vim ]]; then
     echo 'vim-plug is not installed.'
     return 1
   fi
@@ -154,6 +163,9 @@ nvimupg () {
   nvim -c PlugClean!
 }
 ```
+
+With `NVIM_APPNAME=nvimrc`, the same flow uses `~/.config/nvimrc` and the
+matching cache directories instead of the default `nvim` paths.
 
 [vim-plug commands]: https://github.com/junegunn/vim-plug#commands
 
