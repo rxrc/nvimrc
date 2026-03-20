@@ -82,9 +82,7 @@ call plug#begin(s:config_root . '/plugged')
 
 if filereadable(s:config_root . '/plugged/nvimrc/plugins.vim')
   execute 'source ' . fnameescape(s:config_root . '/plugged/nvimrc/plugins.vim')
-  if \$NVIMRC_INSTALL != 'true'
-    Plug '$repo'
-  endif
+  Plug '$repo'
 else
   Plug '$repo', { 'on': [] }
 endif
@@ -122,7 +120,6 @@ EOF
 
   nvim +PlugClean! +qa
   nvim +PlugInstall +qa
-  NVIMRC_INSTALL=true nvim +PlugInstall +qa
   nvim +PlugUpdate +qa
   nvim +PlugInstall +qa
   nvim +PlugClean! +qa

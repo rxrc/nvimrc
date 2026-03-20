@@ -113,9 +113,7 @@ $ NVIM_APPNAME=nvimrc curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
 
    if filereadable(s:config_root . '/plugged/nvimrc/plugins.vim')
      execute 'source ' . fnameescape(s:config_root . '/plugged/nvimrc/plugins.vim')
-     if $NVIMRC_INSTALL != 'true'
-       Plug 'rxrc/nvimrc'
-     endif
+     Plug 'rxrc/nvimrc'
    else
      Plug 'rxrc/nvimrc', { 'on': [] }
    endif
@@ -135,7 +133,6 @@ $ NVIM_APPNAME=nvimrc curl -L https://rc.evansosenko.com/nvimrc/install.sh | sh
 
    ```
    $ nvim -c PlugInstall
-   $ NVIMRC_INSTALL=true nvim -c PlugInstall
    ```
 
    To use an isolated app, run the same commands with `NVIM_APPNAME=nvimrc`.
