@@ -113,5 +113,7 @@ augroup ale-linters-node
   autocmd FileType ruby
     \ let b:ale_fixers = ['standardrb']
   autocmd FileType lua
+    \ let b:ale_linters = []
+  autocmd FileType lua
     \ let b:ale_fixers = ['stylua']
 augroup END
